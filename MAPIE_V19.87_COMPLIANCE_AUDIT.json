@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-01-16T23:10:46.314007",
+  "run_id": "MAPIE-RUN-20260116-220918",
+  "proof_of_work": {
+    "rows_loaded": 765759,
+    "cols_loaded": 1714,
+    "features_used": 20,
+    "views_cols_excluded": 1239,
+    "star_rows": 117926886,
+    "countries_in_star": 18,
+    "platforms_in_star": 48,
+    "total_views_computed": 661472805297
+  },
+  "before_after": {
+    "before_version": "V19.86",
+    "after_version": "V19.87",
+    "before_total": 651807417504,
+    "after_total": 661472805297,
+    "delta_pct": 1.4828594356922435
+  },
+  "checksums": {
+    "bfd_new": "6e6b87982eeea863256ec39a08368743",
+    "star_new": "e0145e833c0b07b4290e42a8eac3a7b2",
+    "bfd_source": "786d25625530efab9ed5850e93fa24a0"
+  },
+  "trust_audit": {
+    "checks_passed": 7,
+    "checks_total": 7,
+    "all_passed": true
+  },
+  "compliance": "COMPLIANT"
+}

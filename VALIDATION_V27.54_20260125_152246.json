@@ -1,0 +1,24 @@
+{
+  "timestamp": "2026-01-25T15:16:42.074979",
+  "database": "BFD_V27.54.parquet",
+  "rows": 766452,
+  "columns": 2267,
+  "ground_truth_matched": 2737,
+  "metrics": {
+    "r2": 0.2191,
+    "mape": 2664.68,
+    "train_samples": 2129,
+    "test_samples": 532,
+    "train_time_seconds": 7.7,
+    "gpu_used": true
+  },
+  "anti_cheat": {
+    "r2_valid": false,
+    "r2_range": "[0.3, 0.9]",
+    "mape_valid": false,
+    "mape_range": "[5.0, 40.0]",
+    "status": "FAIL"
+  },
+  "status": "SUCCESS",
+  "v27_compliant": true
+}

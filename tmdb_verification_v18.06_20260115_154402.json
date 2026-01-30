@@ -1,0 +1,2241 @@
+{
+  "timestamp": "2026-01-15T15:44:02.269678",
+  "total_unique_verified": 632,
+  "actually_released": [
+    {
+      "imdb_id": "tt10337388",
+      "found": true,
+      "tmdb_id": 89719,
+      "tmdb_title": "Joko & Klaas gegen ProSieben",
+      "release_date": "2019-05-28",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10389000",
+      "found": true,
+      "tmdb_id": 114910,
+      "tmdb_title": "Even tot Hier",
+      "release_date": "2019-03-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10225276",
+      "found": true,
+      "tmdb_id": 95676,
+      "tmdb_title": "La Isla de las Tentaciones",
+      "release_date": "2020-01-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10274478",
+      "found": true,
+      "tmdb_id": 89214,
+      "tmdb_title": "The Fault is Cabral's",
+      "release_date": "2016-07-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10601684",
+      "found": true,
+      "tmdb_id": 104465,
+      "tmdb_title": "John and Lisa's Weekend Kitchen",
+      "release_date": "2019-03-31",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10745342",
+      "found": true,
+      "tmdb_id": 90368,
+      "tmdb_title": "The Masked Singer",
+      "release_date": "2019-06-27",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10873784",
+      "found": true,
+      "tmdb_id": 94471,
+      "tmdb_title": "Chateau Meiland",
+      "release_date": "2019-05-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10952354",
+      "found": true,
+      "tmdb_id": 218261,
+      "tmdb_title": "Newscast",
+      "release_date": "2020-02-06",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10928084",
+      "found": true,
+      "tmdb_id": 221998,
+      "tmdb_title": "Papo de Segunda",
+      "release_date": "2015-06-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt10960302",
+      "found": true,
+      "tmdb_id": 94759,
+      "tmdb_title": "Klassen",
+      "release_date": "2019-09-06",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11043554",
+      "found": true,
+      "tmdb_id": 95275,
+      "tmdb_title": "NWA Powerrr",
+      "release_date": "2019-10-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11593888",
+      "found": true,
+      "tmdb_id": 121798,
+      "tmdb_title": "Trucker Babes",
+      "release_date": "2017-07-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11653906",
+      "found": true,
+      "tmdb_id": 115796,
+      "tmdb_title": "Game of Destiny",
+      "release_date": "2020-01-24",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11434028",
+      "found": true,
+      "tmdb_id": 118392,
+      "tmdb_title": "bald and bankrupt",
+      "release_date": "2018-12-06",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11945412",
+      "found": true,
+      "tmdb_id": 112556,
+      "tmdb_title": "Svenska fall",
+      "release_date": "2018-08-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt11994042",
+      "found": true,
+      "tmdb_id": 277654,
+      "tmdb_title": "Rikospaikka",
+      "release_date": "2017-02-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12020444",
+      "found": true,
+      "tmdb_id": 116865,
+      "tmdb_title": "Joseph & Lindsey",
+      "release_date": "2020-03-24",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12378370",
+      "found": true,
+      "tmdb_id": 105546,
+      "tmdb_title": "Isto \u00e9 Gozar Com Quem Trabalha",
+      "release_date": "2020-03-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12211774",
+      "found": true,
+      "tmdb_id": 102740,
+      "tmdb_title": "C\u00e1p\u00e1k k\u00f6z\u00f6tt",
+      "release_date": "2019-02-18",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12522276",
+      "found": true,
+      "tmdb_id": 87357,
+      "tmdb_title": "Gliniarze",
+      "release_date": "2016-08-29",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12698510",
+      "found": true,
+      "tmdb_id": 106914,
+      "tmdb_title": "Die Carolin Kebekus Show",
+      "release_date": "2020-05-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12551678",
+      "found": true,
+      "tmdb_id": 111958,
+      "tmdb_title": "Are You Scared?",
+      "release_date": "2020-06-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12887524",
+      "found": true,
+      "tmdb_id": 251078,
+      "tmdb_title": "Dead Talk Live",
+      "release_date": "2020-04-25",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13093364",
+      "found": true,
+      "tmdb_id": 68661,
+      "tmdb_title": "Chefi la cu\u021bite",
+      "release_date": "2016-03-07",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13085650",
+      "found": true,
+      "tmdb_id": 108466,
+      "tmdb_title": "All Against All",
+      "release_date": "2020-08-31",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13218362",
+      "found": true,
+      "tmdb_id": 94653,
+      "tmdb_title": "Taskmaster Norway",
+      "release_date": "2019-10-17",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13193312",
+      "found": true,
+      "tmdb_id": 111953,
+      "tmdb_title": "Too Many Spirits",
+      "release_date": "2020-10-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13352178",
+      "found": true,
+      "tmdb_id": 121922,
+      "tmdb_title": "Hello Kitty and Friends Supercute Adventures",
+      "release_date": "2020-10-26",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13224534",
+      "found": true,
+      "tmdb_id": 118627,
+      "tmdb_title": "deep und deutlich",
+      "release_date": "2020-10-02",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13563720",
+      "found": true,
+      "tmdb_id": 72090,
+      "tmdb_title": "\u00c5sted Norge",
+      "release_date": "2016-01-25",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13280542",
+      "found": true,
+      "tmdb_id": 122902,
+      "tmdb_title": "Dimension 20's Adventuring Party",
+      "release_date": "2020-04-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13648914",
+      "found": true,
+      "tmdb_id": 117057,
+      "tmdb_title": "Wer stiehlt mir die Show?",
+      "release_date": "2021-01-05",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13471320",
+      "found": true,
+      "tmdb_id": 133663,
+      "tmdb_title": "Love Your Weekend with Alan Titchmarsh",
+      "release_date": "2020-09-06",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13729210",
+      "found": true,
+      "tmdb_id": 121190,
+      "tmdb_title": "Radio Mileva",
+      "release_date": "2021-03-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13809880",
+      "found": true,
+      "tmdb_id": 116260,
+      "tmdb_title": "Susan Calman's Grand Day Out",
+      "release_date": "2021-01-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt13972228",
+      "found": true,
+      "tmdb_id": 116133,
+      "tmdb_title": "Go Go Squid 2: Dt.Appledog's Time",
+      "release_date": "2021-02-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14271900",
+      "found": true,
+      "tmdb_id": 121878,
+      "tmdb_title": "De Geknipte Gast",
+      "release_date": "2020-02-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14167852",
+      "found": true,
+      "tmdb_id": 118274,
+      "tmdb_title": "Sweet The World Sugar",
+      "release_date": "2021-02-13",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14344360",
+      "found": true,
+      "tmdb_id": 124887,
+      "tmdb_title": "The Cook Up with Adam Liaw",
+      "release_date": "2021-04-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14435292",
+      "found": true,
+      "tmdb_id": 96665,
+      "tmdb_title": "Kees van der Spek: Oplichters aangepakt",
+      "release_date": "2019-10-29",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14353828",
+      "found": true,
+      "tmdb_id": 272036,
+      "tmdb_title": "Katy Tur Reports",
+      "release_date": "2024-09-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14595212",
+      "found": true,
+      "tmdb_id": 128377,
+      "tmdb_title": "Ryan's World Specials presented by pocket.watch",
+      "release_date": "2019-06-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14760316",
+      "found": true,
+      "tmdb_id": 132223,
+      "tmdb_title": "Yes, Chef!",
+      "release_date": "2021-06-17",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14728224",
+      "found": true,
+      "tmdb_id": 203299,
+      "tmdb_title": "A Captain's Log",
+      "release_date": "2021-06-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14564802",
+      "found": true,
+      "tmdb_id": 128288,
+      "tmdb_title": "Ermittler!",
+      "release_date": "2018-06-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14786934",
+      "found": true,
+      "tmdb_id": 240740,
+      "tmdb_title": "Scarpetta",
+      "release_date": "2026-03-11",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt14782352",
+      "found": true,
+      "tmdb_id": 99939,
+      "tmdb_title": "Casualty 24/7: Every Second Counts",
+      "release_date": "2018-09-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15303180",
+      "found": true,
+      "tmdb_id": 136166,
+      "tmdb_title": "Lang Leve de Liefde",
+      "release_date": "2020-01-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15375572",
+      "found": true,
+      "tmdb_id": 115939,
+      "tmdb_title": "Media Inside",
+      "release_date": "2021-01-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15385850",
+      "found": true,
+      "tmdb_id": 133346,
+      "tmdb_title": "The Flight Attendants",
+      "release_date": "2021-09-06",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15407348",
+      "found": true,
+      "tmdb_id": 137059,
+      "tmdb_title": "MaiThink X \u2013 Die Show",
+      "release_date": "2021-10-24",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15553638",
+      "found": true,
+      "tmdb_id": 130887,
+      "tmdb_title": "The Hundred with Andy Lee",
+      "release_date": "2021-08-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15569214",
+      "found": true,
+      "tmdb_id": 198044,
+      "tmdb_title": "GENO Kids - Cartoons & Nursery Rhymes",
+      "release_date": "2021-07-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15521024",
+      "found": true,
+      "tmdb_id": 133781,
+      "tmdb_title": "Motorway Cops: Catching Britain's Speeders",
+      "release_date": "2021-09-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt16636212",
+      "found": true,
+      "tmdb_id": 157271,
+      "tmdb_title": "Godparents",
+      "release_date": "2022-02-07",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt16960858",
+      "found": true,
+      "tmdb_id": 208992,
+      "tmdb_title": "Supa Strikas - Rookie Season",
+      "release_date": "2021-12-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt17040736",
+      "found": true,
+      "tmdb_id": 155853,
+      "tmdb_title": "Yalnizim Mesut Bey",
+      "release_date": "2022-01-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt19882338",
+      "found": true,
+      "tmdb_id": 206550,
+      "tmdb_title": "The Devil's Promise",
+      "release_date": "2022-09-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21102560",
+      "found": true,
+      "tmdb_id": 238828,
+      "tmdb_title": "D\u00e5 \u00e4r vi ig\u00e5ng",
+      "release_date": "2021-09-23",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21107976",
+      "found": true,
+      "tmdb_id": 229763,
+      "tmdb_title": "Eleanor's Bench",
+      "release_date": "2023-06-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt17071300",
+      "found": true,
+      "tmdb_id": 281720,
+      "tmdb_title": "Humberto",
+      "release_date": "2021-01-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21152352",
+      "found": true,
+      "tmdb_id": 258268,
+      "tmdb_title": "Koppieteefontein",
+      "release_date": "2021-10-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21267394",
+      "found": true,
+      "tmdb_id": 205955,
+      "tmdb_title": "Icons Unearthed: Star Wars",
+      "release_date": "2022-07-12",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21245182",
+      "found": true,
+      "tmdb_id": 100054,
+      "tmdb_title": "I Like to Watch",
+      "release_date": "2019-11-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt22001308",
+      "found": true,
+      "tmdb_id": 249520,
+      "tmdb_title": "Andrew Zimmern's Wild Game Kitchen",
+      "release_date": "2022-09-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt21997390",
+      "found": true,
+      "tmdb_id": 153663,
+      "tmdb_title": "The Land of the Cyclops",
+      "release_date": "2021-09-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt22688206",
+      "found": true,
+      "tmdb_id": 219802,
+      "tmdb_title": "Strula",
+      "release_date": "2021-04-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt23723472",
+      "found": true,
+      "tmdb_id": 287655,
+      "tmdb_title": "Miss/Match",
+      "release_date": "2022-09-28",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt24580850",
+      "found": true,
+      "tmdb_id": 219269,
+      "tmdb_title": "Reschke Fernsehen",
+      "release_date": "2023-02-02",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt22884770",
+      "found": true,
+      "tmdb_id": 218981,
+      "tmdb_title": "Bj\u00f8rnis",
+      "release_date": "2021-09-23",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt25150800",
+      "found": true,
+      "tmdb_id": 212496,
+      "tmdb_title": "Projecte BETA. La s\u00e8rie",
+      "release_date": "2022-10-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt23030000",
+      "found": true,
+      "tmdb_id": 258321,
+      "tmdb_title": "Jet Lag: The Game",
+      "release_date": "2022-05-25",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt26242748",
+      "found": true,
+      "tmdb_id": 113371,
+      "tmdb_title": "Svenska Truckers",
+      "release_date": "2019-08-12",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt26740963",
+      "found": true,
+      "tmdb_id": 277686,
+      "tmdb_title": "Pehredaar",
+      "release_date": "2022-09-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt26255118",
+      "found": true,
+      "tmdb_id": 125006,
+      "tmdb_title": "Big Brother Brasil: A Elimina\u00e7\u00e3o",
+      "release_date": "2003-01-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt26692417",
+      "found": true,
+      "tmdb_id": 220150,
+      "tmdb_title": "Pok\u00e9mon Horizons",
+      "release_date": "2023-04-14",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27004309",
+      "found": true,
+      "tmdb_id": 138265,
+      "tmdb_title": "Snacked",
+      "release_date": "2021-07-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt26996360",
+      "found": true,
+      "tmdb_id": 137568,
+      "tmdb_title": "Kriminalarkivet med Pops och Lampers",
+      "release_date": "2021-10-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27486734",
+      "found": true,
+      "tmdb_id": 261587,
+      "tmdb_title": "Kovan viikon ilta",
+      "release_date": "2023-04-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27564441",
+      "found": true,
+      "tmdb_id": 217650,
+      "tmdb_title": "Dunaj, k va\u0161im slu\u017eb\u00e1m",
+      "release_date": "2023-01-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27497448",
+      "found": true,
+      "tmdb_id": 224372,
+      "tmdb_title": "A Knight of the Seven Kingdoms",
+      "release_date": "2026-01-18",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27582860",
+      "found": true,
+      "tmdb_id": 232429,
+      "tmdb_title": "Project Fear",
+      "release_date": "2023-06-23",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27722691",
+      "found": true,
+      "tmdb_id": 297699,
+      "tmdb_title": "The Lesbian Homie",
+      "release_date": "2023-06-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27814427",
+      "found": true,
+      "tmdb_id": 307991,
+      "tmdb_title": "Skibidi Toilet",
+      "release_date": "2023-02-07",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27727071",
+      "found": true,
+      "tmdb_id": 232139,
+      "tmdb_title": "Huisgenoot: Ware Lewensdramas",
+      "release_date": "2017-07-27",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27845136",
+      "found": true,
+      "tmdb_id": 254345,
+      "tmdb_title": "Exploring Mexico's Kitchen with Rick Bayless",
+      "release_date": "2023-06-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27936959",
+      "found": true,
+      "tmdb_id": 238839,
+      "tmdb_title": "Matrimonio A Prima Vista Italia",
+      "release_date": "2019-09-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27954677",
+      "found": true,
+      "tmdb_id": 112915,
+      "tmdb_title": "Familie Gillis: Massa is Kassa",
+      "release_date": "2020-08-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt28312893",
+      "found": true,
+      "tmdb_id": 295279,
+      "tmdb_title": "Heat Eaters",
+      "release_date": "2023-07-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt28689687",
+      "found": true,
+      "tmdb_id": 232869,
+      "tmdb_title": "Mickey Mouse Clubhouse+",
+      "release_date": "2025-07-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt29261323",
+      "found": true,
+      "tmdb_id": 236445,
+      "tmdb_title": "Campus Beats",
+      "release_date": "2023-09-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt29626152",
+      "found": true,
+      "tmdb_id": 278301,
+      "tmdb_title": "Crown Street 11",
+      "release_date": "2024-09-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt28862450",
+      "found": true,
+      "tmdb_id": 233928,
+      "tmdb_title": "The Traitors Sweden",
+      "release_date": "2023-09-02",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt29598192",
+      "found": true,
+      "tmdb_id": 131975,
+      "tmdb_title": "Nemocnica",
+      "release_date": "2021-08-24",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30291706",
+      "found": true,
+      "tmdb_id": 252409,
+      "tmdb_title": "Des id\u00e9es de grandeur dans ma maison",
+      "release_date": "2023-01-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30392956",
+      "found": true,
+      "tmdb_id": 123345,
+      "tmdb_title": "Crime Time",
+      "release_date": "2020-02-27",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30926850",
+      "found": true,
+      "tmdb_id": 274066,
+      "tmdb_title": "Rangeen Kahaniyan",
+      "release_date": "2024-01-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30954380",
+      "found": true,
+      "tmdb_id": 298819,
+      "tmdb_title": "Dish It Out",
+      "release_date": "2025-09-05",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30790577",
+      "found": true,
+      "tmdb_id": 260497,
+      "tmdb_title": "Dus June Kii Raat",
+      "release_date": "2024-08-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt30817113",
+      "found": true,
+      "tmdb_id": 253976,
+      "tmdb_title": "Klankbank",
+      "release_date": "2023-04-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31122862",
+      "found": true,
+      "tmdb_id": 284903,
+      "tmdb_title": "Sneaker Shopping",
+      "release_date": "2024-02-02",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31023273",
+      "found": true,
+      "tmdb_id": 281714,
+      "tmdb_title": "Late Xou con Marc Gir\u00f3",
+      "release_date": "2023-10-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31243006",
+      "found": true,
+      "tmdb_id": 220983,
+      "tmdb_title": "Roni and Tom",
+      "release_date": "2023-02-12",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31137273",
+      "found": true,
+      "tmdb_id": 245318,
+      "tmdb_title": "Margo's Got Money Troubles",
+      "release_date": "2026-04-14",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31614361",
+      "found": true,
+      "tmdb_id": 246034,
+      "tmdb_title": "De Oranjezondag",
+      "release_date": "2024-03-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31790088",
+      "found": true,
+      "tmdb_id": 97891,
+      "tmdb_title": "Krejlerkongen",
+      "release_date": "2015-08-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31974288",
+      "found": true,
+      "tmdb_id": 250505,
+      "tmdb_title": "Agatha Christie's Seven Dials",
+      "release_date": "2026-01-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt32106115",
+      "found": true,
+      "tmdb_id": 271134,
+      "tmdb_title": "Hier Sit Die Manne",
+      "release_date": "2023-06-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt31937954",
+      "found": true,
+      "tmdb_id": 108181,
+      "tmdb_title": "Imperfect Women",
+      "release_date": "2026-03-17",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt32119132",
+      "found": true,
+      "tmdb_id": 278702,
+      "tmdb_title": "A Senten\u00e7a",
+      "release_date": "2024-04-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt32481530",
+      "found": true,
+      "tmdb_id": 256564,
+      "tmdb_title": "Congela",
+      "release_date": "2024-06-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt32229555",
+      "found": true,
+      "tmdb_id": 298685,
+      "tmdb_title": "Zhong",
+      "release_date": "2019-08-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt33088373",
+      "found": true,
+      "tmdb_id": 307632,
+      "tmdb_title": "Disney's Road Trip",
+      "release_date": "2024-08-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt33363120",
+      "found": true,
+      "tmdb_id": 296810,
+      "tmdb_title": "Teenage Boss: Next Level",
+      "release_date": "2024-10-12",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt33783201",
+      "found": true,
+      "tmdb_id": 278699,
+      "tmdb_title": "Funt\u00e1stico",
+      "release_date": "2024-11-17",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt34476935",
+      "found": true,
+      "tmdb_id": 91901,
+      "tmdb_title": "Mittendrin - Flughafen Frankfurt",
+      "release_date": "2019-01-23",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt34163451",
+      "found": true,
+      "tmdb_id": 275892,
+      "tmdb_title": "\u03a0\u03b1\u03b9\u03c7\u03bd\u03af\u03b4\u03b9\u03b1 \u0395\u03ba\u03b4\u03af\u03ba\u03b7\u03c3\u03b7\u03c2",
+      "release_date": "2024-11-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt3422854",
+      "found": true,
+      "tmdb_id": 62095,
+      "tmdb_title": "Texas Flip and Move",
+      "release_date": "2015-01-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35544092",
+      "found": true,
+      "tmdb_id": 282803,
+      "tmdb_title": "Murder UK",
+      "release_date": "2025-01-14",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35498959",
+      "found": true,
+      "tmdb_id": 282644,
+      "tmdb_title": "Heart of the Dawn",
+      "release_date": "2025-09-21",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35707374",
+      "found": true,
+      "tmdb_id": 291339,
+      "tmdb_title": "Memory of a Killer",
+      "release_date": "2026-01-25",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35682154",
+      "found": true,
+      "tmdb_id": 284019,
+      "tmdb_title": "Pasja\u010da",
+      "release_date": "2025-02-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35725528",
+      "found": true,
+      "tmdb_id": 218078,
+      "tmdb_title": "Leo talks",
+      "release_date": "2023-01-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35665832",
+      "found": true,
+      "tmdb_id": 281192,
+      "tmdb_title": "Special Ops: To Catch A Criminal",
+      "release_date": "2025-01-05",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt35887884",
+      "found": true,
+      "tmdb_id": 297568,
+      "tmdb_title": "The Mochas Eye",
+      "release_date": "2025-03-23",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt36123536",
+      "found": true,
+      "tmdb_id": 158414,
+      "tmdb_title": "Ding Dong \u2013 Zeig mir dein Zuhause!",
+      "release_date": "2020-07-03",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt36517683",
+      "found": true,
+      "tmdb_id": 301535,
+      "tmdb_title": "Lollapalooza Brasil",
+      "release_date": "2025-03-28",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt36689236",
+      "found": true,
+      "tmdb_id": 291080,
+      "tmdb_title": "The Weeknight",
+      "release_date": "2025-05-05",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt36822350",
+      "found": true,
+      "tmdb_id": 297372,
+      "tmdb_title": "The Impossible Case: Final Look",
+      "release_date": "2025-05-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt37278042",
+      "found": true,
+      "tmdb_id": 301631,
+      "tmdb_title": "Tre Kronor - The Hunt for World Championship Gold",
+      "release_date": "2025-09-26",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt37241358",
+      "found": true,
+      "tmdb_id": 293445,
+      "tmdb_title": "Sevier Heights",
+      "release_date": "2025-06-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt37272610",
+      "found": true,
+      "tmdb_id": 292180,
+      "tmdb_title": "Vetkoekpaleis 3",
+      "release_date": "2025-05-22",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt37858179",
+      "found": true,
+      "tmdb_id": 281655,
+      "tmdb_title": "Ana, You're in My DNA",
+      "release_date": "2025-01-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt38736987",
+      "found": true,
+      "tmdb_id": 76772,
+      "tmdb_title": "Frozen Roads",
+      "release_date": "2018-01-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt39267855",
+      "found": true,
+      "tmdb_id": 309591,
+      "tmdb_title": "The Masterminds: Full Cut",
+      "release_date": "2026-01-01",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt4437104",
+      "found": true,
+      "tmdb_id": 74337,
+      "tmdb_title": "Gogglebox Australia",
+      "release_date": "2015-02-11",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt5516814",
+      "found": true,
+      "tmdb_id": 223270,
+      "tmdb_title": "Handwerkskunst!",
+      "release_date": "2015-10-16",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt5461832",
+      "found": true,
+      "tmdb_id": 241728,
+      "tmdb_title": "Sohvaperunat",
+      "release_date": "2015-02-27",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6230698",
+      "found": true,
+      "tmdb_id": 279837,
+      "tmdb_title": "Arizona Illustrated",
+      "release_date": "2014-08-22",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6015820",
+      "found": true,
+      "tmdb_id": 67329,
+      "tmdb_title": "Bottersnikes & Gumbles",
+      "release_date": "2016-07-25",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6093746",
+      "found": true,
+      "tmdb_id": 76908,
+      "tmdb_title": "Pit\u00e4\u00e4k\u00f6 olla huolissaan?",
+      "release_date": "2016-09-29",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt7670568",
+      "found": true,
+      "tmdb_id": 84910,
+      "tmdb_title": "The Masked Singer",
+      "release_date": "2019-01-02",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6293468",
+      "found": true,
+      "tmdb_id": 81440,
+      "tmdb_title": "Traffic Cops",
+      "release_date": "2016-11-14",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6713768",
+      "found": true,
+      "tmdb_id": 70899,
+      "tmdb_title": "Rich House, Poor House",
+      "release_date": "2017-03-30",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt7917804",
+      "found": true,
+      "tmdb_id": 85959,
+      "tmdb_title": "Lombard. \u017bycie pod zastaw",
+      "release_date": "2017-09-04",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt6778324",
+      "found": true,
+      "tmdb_id": 87310,
+      "tmdb_title": "The Pit Stop",
+      "release_date": "2016-03-08",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8141342",
+      "found": true,
+      "tmdb_id": 279550,
+      "tmdb_title": "DTK: Elviszlek magammal",
+      "release_date": "2015-10-07",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8135220",
+      "found": true,
+      "tmdb_id": 87449,
+      "tmdb_title": "Sprawiedliwi - Wydzia\u0142 kryminalny",
+      "release_date": "2016-09-05",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8152776",
+      "found": true,
+      "tmdb_id": 77709,
+      "tmdb_title": "Svenska nyheter",
+      "release_date": "2018-03-09",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8488830",
+      "found": true,
+      "tmdb_id": 221523,
+      "tmdb_title": "Celebrity Catchphrase",
+      "release_date": "2018-06-17",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8622160",
+      "found": true,
+      "tmdb_id": 223530,
+      "tmdb_title": "Star Trek: Starfleet Academy",
+      "release_date": "2026-01-15",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8948264",
+      "found": true,
+      "tmdb_id": 246631,
+      "tmdb_title": "vDud",
+      "release_date": "2017-02-07",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9165512",
+      "found": true,
+      "tmdb_id": 86882,
+      "tmdb_title": "Love & Marriage Huntsville",
+      "release_date": "2019-01-12",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9066038",
+      "found": true,
+      "tmdb_id": 223036,
+      "tmdb_title": "Peston",
+      "release_date": "2018-09-26",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9355244",
+      "found": true,
+      "tmdb_id": 86725,
+      "tmdb_title": "\u00c7ok G\u00fczel Hareketler 2",
+      "release_date": "2019-02-10",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9373254",
+      "found": true,
+      "tmdb_id": 13975,
+      "tmdb_title": "Miley's New Year's Eve Party",
+      "release_date": "2004-12-31",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9646546",
+      "found": true,
+      "tmdb_id": 89180,
+      "tmdb_title": "Dimension 20",
+      "release_date": "2018-09-19",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9635782",
+      "found": true,
+      "tmdb_id": 133574,
+      "tmdb_title": "\u00d6ver Atlanten",
+      "release_date": "2019-08-20",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt9690112",
+      "found": true,
+      "tmdb_id": 126565,
+      "tmdb_title": "Um, Actually...",
+      "release_date": "2018-09-28",
+      "type": "tv",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt12369724",
+      "found": true,
+      "tmdb_id": 748763,
+      "tmdb_title": "Verity",
+      "release_date": "2020-05-22",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt15489444",
+      "found": true,
+      "tmdb_id": 877812,
+      "tmdb_title": "Verity",
+      "release_date": "2010-12-06",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt29612071",
+      "found": true,
+      "tmdb_id": 1276521,
+      "tmdb_title": "Charlie the Wonderdog",
+      "release_date": "2025-10-24",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt8270746",
+      "found": true,
+      "tmdb_id": 1225835,
+      "tmdb_title": "\u09b6\u09c2\u09a8\u09cd\u09af\u09a4\u09be",
+      "release_date": "2017-04-21",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27047903",
+      "found": true,
+      "tmdb_id": 1159559,
+      "tmdb_title": "Scream 7",
+      "release_date": "2026-02-25",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt16911616",
+      "found": true,
+      "tmdb_id": 1115030,
+      "tmdb_title": "Animal Friends",
+      "release_date": "2026-05-01",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27165187",
+      "found": true,
+      "tmdb_id": 1101383,
+      "tmdb_title": "Untitled David Robert Mitchell Film",
+      "release_date": "2026-08-12",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt27200708",
+      "found": true,
+      "tmdb_id": 1102883,
+      "tmdb_title": "Mother Mary",
+      "release_date": "2026-04-24",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt36160265",
+      "found": true,
+      "tmdb_id": 1509728,
+      "tmdb_title": "Dopo la sigaretta",
+      "release_date": "2025-10-01",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt0084311",
+      "found": true,
+      "tmdb_id": 323159,
+      "tmdb_title": "Mother Mary",
+      "release_date": "1982-11-01",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt32558705",
+      "found": true,
+      "tmdb_id": 1300968,
+      "tmdb_title": "The Hunger Games: Sunrise on the Reaping",
+      "release_date": "2026-11-18",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt1117392",
+      "found": true,
+      "tmdb_id": 423968,
+      "tmdb_title": "The Ark and the Aardvark",
+      "release_date": "2026-04-30",
+      "type": "movie",
+      "actually_released": true
+    },
+    {
+      "imdb_id": "tt5835938",
+      "found": true,
+      "tmdb_id": 1355413,
+      "tmdb_title": "Pela Adhi Akshar",
+      "release_date": "2017-03-24",
+      "type": "movie",
+      "actually_released": true
+    }
+  ],
+  "confirmed_unreleased": [
+    {
+      "imdb_id": "tt12806006",
+      "found": true,
+      "tmdb_id": 118923,
+      "tmdb_title": "Arctic Friens",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt17510870",
+      "found": true,
+      "tmdb_id": 308612,
+      "tmdb_title": "Zeeman Confronteert",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt18277768",
+      "found": true,
+      "tmdb_id": 59891,
+      "tmdb_title": "Sportsnet Central",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt23731346",
+      "found": true,
+      "tmdb_id": 261647,
+      "tmdb_title": "Sofia the First: Royal Magic",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt27094707",
+      "found": true,
+      "tmdb_id": 1317189,
+      "tmdb_title": "Baby Puffins & Bunny",
+      "release_date": "",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt28487606",
+      "found": true,
+      "tmdb_id": 282004,
+      "tmdb_title": "Ryan Trahan (TV Series)",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt33204276",
+      "found": true,
+      "tmdb_id": 225891,
+      "tmdb_title": "The Madison",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt34387186",
+      "found": true,
+      "tmdb_id": 305776,
+      "tmdb_title": "\u91cd\u590d\u5267\u96c6",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt5057752",
+      "found": true,
+      "tmdb_id": 239540,
+      "tmdb_title": "The Chase Australia",
+      "release_date": "",
+      "type": "tv",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt17043156",
+      "found": true,
+      "tmdb_id": 1134306,
+      "tmdb_title": "Thread: An Insidious Tale",
+      "release_date": "",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt34778387",
+      "found": true,
+      "tmdb_id": 1511386,
+      "tmdb_title": "Khottabych",
+      "release_date": "2027-01-01",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt26443610",
+      "found": true,
+      "tmdb_id": 1497464,
+      "tmdb_title": "Gatto",
+      "release_date": "2027-03-03",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt36825493",
+      "found": true,
+      "tmdb_id": 1528628,
+      "tmdb_title": "The Shark That Roared",
+      "release_date": "2027-07-27",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt33317144",
+      "found": true,
+      "tmdb_id": 1519227,
+      "tmdb_title": "Captain Zero: The Movie",
+      "release_date": "2027-06-18",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt37190812",
+      "found": true,
+      "tmdb_id": 1541196,
+      "tmdb_title": "Winnie-the-Pooh and all-all-all",
+      "release_date": "2027-03-25",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt33088418",
+      "found": true,
+      "tmdb_id": 1327821,
+      "tmdb_title": "Incredibles 3",
+      "release_date": "",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt3095356",
+      "found": true,
+      "tmdb_id": 216527,
+      "tmdb_title": "Avatar 4",
+      "release_date": "2029-12-19",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt6113186",
+      "found": true,
+      "tmdb_id": 421892,
+      "tmdb_title": "Shrek 5",
+      "release_date": "2027-06-30",
+      "type": "movie",
+      "actually_released": false
+    },
+    {
+      "imdb_id": "tt5637536",
+      "found": true,
+      "tmdb_id": 393209,
+      "tmdb_title": "Avatar 5",
+      "release_date": "2031-12-17",
+      "type": "movie",
+      "actually_released": false
+    }
+  ],
+  "not_found": [
+    {
+      "imdb_id": "tt10192600",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10016766",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10019180",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10225542",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10322718",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10039060",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt0166938",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10127524",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10792770",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10666080",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10771948",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10799498",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10810398",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10941790",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10881294",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10895734",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10950452",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt10955394",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11036528",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11150800",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11064892",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11076016",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11150830",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11142126",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11271224",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11383908",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11219246",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11648570",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11176586",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11669260",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11271396",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11487072",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11916718",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11768024",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11765110",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11928234",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11907800",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt11844982",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12021712",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12007618",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12088034",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12217146",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12027330",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12245638",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12217152",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12095976",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12164342",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12170158",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12452628",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12204228",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12377954",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12694936",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12572366",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12702692",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12759502",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12735400",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12739416",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12761788",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt12752078",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13116834",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13075582",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13380830",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13443482",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13619070",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13706168",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13838726",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13768650",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13794496",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13833784",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13977334",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14039516",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13854210",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt13877348",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14203876",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14066712",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14273754",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14207860",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14507976",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14338322",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14588150",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14362968",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14423420",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14778968",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14723254",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14629766",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14714890",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14905306",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14899074",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14953064",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14864654",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14998550",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt14955106",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15008626",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15178122",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15054972",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15073734",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15281620",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15313240",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15017534",
+      "found": false,
+      "error": "Not found in TMDB"
+    },
+    {
+      "imdb_id": "tt15066202",
+      "found": false,
+      "error": "Not found in TMDB"
+    }
+  ],
+  "errors": [
+    {
+      "imdb_id": "tt31228002",
+      "found": false,
+      "error": "Timeout"
+    },
+    {
+      "imdb_id": "tt37340723",
+      "found": false,
+      "error": "Timeout"
+    }
+  ]
+}

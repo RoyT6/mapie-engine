@@ -1,0 +1,280 @@
+{
+  "version": "18.06",
+  "timestamp": "2026-01-15T15:45:51.068325",
+  "fix_description": "Full TMDB API Verification (Fixed Auth)",
+  "runtime_minutes": 6.07,
+  "api_verification": {
+    "unique_ids_checked": 632,
+    "actually_released": 172,
+    "confirmed_unreleased": 19,
+    "not_found_in_tmdb": 439,
+    "api_errors": 2
+  },
+  "fixes_applied": {
+    "total_unique_ids": 632,
+    "actually_released_count": 172,
+    "confirmed_unreleased_count": 19,
+    "not_found_count": 439,
+    "error_count": 2,
+    "rows_fixed": 1784
+  },
+  "data_summary": {
+    "bfd_rows": 768641,
+    "bfd_cols": 1714,
+    "star_rows": 204192985,
+    "unreleased_before": 7238,
+    "unreleased_after": 6438
+  },
+  "sample_actually_released": [
+    {
+      "imdb_id": "tt10337388",
+      "title": "Joko & Klaas gegen ProSieben",
+      "release_date": "2019-05-28"
+    },
+    {
+      "imdb_id": "tt10389000",
+      "title": "Even tot Hier",
+      "release_date": "2019-03-16"
+    },
+    {
+      "imdb_id": "tt10225276",
+      "title": "La Isla de las Tentaciones",
+      "release_date": "2020-01-09"
+    },
+    {
+      "imdb_id": "tt10274478",
+      "title": "The Fault is Cabral's",
+      "release_date": "2016-07-19"
+    },
+    {
+      "imdb_id": "tt10601684",
+      "title": "John and Lisa's Weekend Kitchen",
+      "release_date": "2019-03-31"
+    },
+    {
+      "imdb_id": "tt10745342",
+      "title": "The Masked Singer",
+      "release_date": "2019-06-27"
+    },
+    {
+      "imdb_id": "tt10873784",
+      "title": "Chateau Meiland",
+      "release_date": "2019-05-20"
+    },
+    {
+      "imdb_id": "tt10952354",
+      "title": "Newscast",
+      "release_date": "2020-02-06"
+    },
+    {
+      "imdb_id": "tt10928084",
+      "title": "Papo de Segunda",
+      "release_date": "2015-06-08"
+    },
+    {
+      "imdb_id": "tt10960302",
+      "title": "Klassen",
+      "release_date": "2019-09-06"
+    },
+    {
+      "imdb_id": "tt11043554",
+      "title": "NWA Powerrr",
+      "release_date": "2019-10-08"
+    },
+    {
+      "imdb_id": "tt11593888",
+      "title": "Trucker Babes",
+      "release_date": "2017-07-09"
+    },
+    {
+      "imdb_id": "tt11653906",
+      "title": "Game of Destiny",
+      "release_date": "2020-01-24"
+    },
+    {
+      "imdb_id": "tt11434028",
+      "title": "bald and bankrupt",
+      "release_date": "2018-12-06"
+    },
+    {
+      "imdb_id": "tt11945412",
+      "title": "Svenska fall",
+      "release_date": "2018-08-30"
+    },
+    {
+      "imdb_id": "tt11994042",
+      "title": "Rikospaikka",
+      "release_date": "2017-02-01"
+    },
+    {
+      "imdb_id": "tt12020444",
+      "title": "Joseph & Lindsey",
+      "release_date": "2020-03-24"
+    },
+    {
+      "imdb_id": "tt12378370",
+      "title": "Isto \u00e9 Gozar Com Quem Trabalha",
+      "release_date": "2020-03-01"
+    },
+    {
+      "imdb_id": "tt12211774",
+      "title": "C\u00e1p\u00e1k k\u00f6z\u00f6tt",
+      "release_date": "2019-02-18"
+    },
+    {
+      "imdb_id": "tt12522276",
+      "title": "Gliniarze",
+      "release_date": "2016-08-29"
+    },
+    {
+      "imdb_id": "tt12698510",
+      "title": "Die Carolin Kebekus Show",
+      "release_date": "2020-05-21"
+    },
+    {
+      "imdb_id": "tt12551678",
+      "title": "Are You Scared?",
+      "release_date": "2020-06-19"
+    },
+    {
+      "imdb_id": "tt12887524",
+      "title": "Dead Talk Live",
+      "release_date": "2020-04-25"
+    },
+    {
+      "imdb_id": "tt13093364",
+      "title": "Chefi la cu\u021bite",
+      "release_date": "2016-03-07"
+    },
+    {
+      "imdb_id": "tt13085650",
+      "title": "All Against All",
+      "release_date": "2020-08-31"
+    },
+    {
+      "imdb_id": "tt13218362",
+      "title": "Taskmaster Norway",
+      "release_date": "2019-10-17"
+    },
+    {
+      "imdb_id": "tt13193312",
+      "title": "Too Many Spirits",
+      "release_date": "2020-10-08"
+    },
+    {
+      "imdb_id": "tt13352178",
+      "title": "Hello Kitty and Friends Supercute Adventures",
+      "release_date": "2020-10-26"
+    },
+    {
+      "imdb_id": "tt13224534",
+      "title": "deep und deutlich",
+      "release_date": "2020-10-02"
+    },
+    {
+      "imdb_id": "tt13563720",
+      "title": "\u00c5sted Norge",
+      "release_date": "2016-01-25"
+    },
+    {
+      "imdb_id": "tt13280542",
+      "title": "Dimension 20's Adventuring Party",
+      "release_date": "2020-04-08"
+    },
+    {
+      "imdb_id": "tt13648914",
+      "title": "Wer stiehlt mir die Show?",
+      "release_date": "2021-01-05"
+    },
+    {
+      "imdb_id": "tt13471320",
+      "title": "Love Your Weekend with Alan Titchmarsh",
+      "release_date": "2020-09-06"
+    },
+    {
+      "imdb_id": "tt13729210",
+      "title": "Radio Mileva",
+      "release_date": "2021-03-09"
+    },
+    {
+      "imdb_id": "tt13809880",
+      "title": "Susan Calman's Grand Day Out",
+      "release_date": "2021-01-08"
+    },
+    {
+      "imdb_id": "tt13972228",
+      "title": "Go Go Squid 2: Dt.Appledog's Time",
+      "release_date": "2021-02-04"
+    },
+    {
+      "imdb_id": "tt14271900",
+      "title": "De Geknipte Gast",
+      "release_date": "2020-02-04"
+    },
+    {
+      "imdb_id": "tt14167852",
+      "title": "Sweet The World Sugar",
+      "release_date": "2021-02-13"
+    },
+    {
+      "imdb_id": "tt14344360",
+      "title": "The Cook Up with Adam Liaw",
+      "release_date": "2021-04-19"
+    },
+    {
+      "imdb_id": "tt14435292",
+      "title": "Kees van der Spek: Oplichters aangepakt",
+      "release_date": "2019-10-29"
+    },
+    {
+      "imdb_id": "tt14353828",
+      "title": "Katy Tur Reports",
+      "release_date": "2024-09-20"
+    },
+    {
+      "imdb_id": "tt14595212",
+      "title": "Ryan's World Specials presented by pocket.watch",
+      "release_date": "2019-06-15"
+    },
+    {
+      "imdb_id": "tt14760316",
+      "title": "Yes, Chef!",
+      "release_date": "2021-06-17"
+    },
+    {
+      "imdb_id": "tt14728224",
+      "title": "A Captain's Log",
+      "release_date": "2021-06-30"
+    },
+    {
+      "imdb_id": "tt14564802",
+      "title": "Ermittler!",
+      "release_date": "2018-06-16"
+    },
+    {
+      "imdb_id": "tt14786934",
+      "title": "Scarpetta",
+      "release_date": "2026-03-11"
+    },
+    {
+      "imdb_id": "tt14782352",
+      "title": "Casualty 24/7: Every Second Counts",
+      "release_date": "2018-09-19"
+    },
+    {
+      "imdb_id": "tt15303180",
+      "title": "Lang Leve de Liefde",
+      "release_date": "2020-01-20"
+    },
+    {
+      "imdb_id": "tt15375572",
+      "title": "Media Inside",
+      "release_date": "2021-01-03"
+    },
+    {
+      "imdb_id": "tt15385850",
+      "title": "The Flight Attendants",
+      "release_date": "2021-09-06"
+    }
+  ]
+}

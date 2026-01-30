@@ -1,0 +1,154 @@
+{
+  "timestamp": "2026-01-22T01:46:04.007154",
+  "files": {
+    "bfd_v24_02": {
+      "file": "BFD_V24.02.parquet",
+      "rows": 765860,
+      "columns": 1702,
+      "file_size_bytes": 3619425433,
+      "load_time": 21.140579,
+      "schema": {
+        "required_found": 3,
+        "required_missing": [],
+        "optional_found": 6,
+        "abstract_signals": 20,
+        "views_columns": 1232,
+        "wvv_columns": 0
+      },
+      "views_computed": {
+        "nulls": 53252,
+        "null_pct": 6.953229049695767,
+        "zeros": 0,
+        "negatives": 0,
+        "mean": 865805.8144477749,
+        "median": 836912.0,
+        "min": 50000.0,
+        "max": 4376364.0
+      },
+      "unreleased_status": 9524,
+      "future_years": 28,
+      "anti_cheat": {
+        "r2": 0.664518107434587,
+        "mape": 9.308416795665778,
+        "r2_valid": "True",
+        "mape_valid": "True",
+        "status": "PASS"
+      },
+      "status": "LOADED"
+    },
+    "star_schema_v24_00": {
+      "file": "BFD_Star_Schema_V24.00.parquet",
+      "rows": 262932320,
+      "columns": 4,
+      "file_size_bytes": 1264984636,
+      "load_time": 59.329677,
+      "schema": {
+        "columns": [
+          "fc_uid",
+          "country",
+          "platform",
+          "views"
+        ],
+        "expected_found": 4,
+        "expected_missing": []
+      },
+      "unique_titles": 758035,
+      "unique_countries": 22,
+      "countries": [
+        "AR",
+        "AU",
+        "BR",
+        "CA",
+        "CN",
+        "DE",
+        "ES",
+        "FR",
+        "GB",
+        "IN",
+        "IT",
+        "JP",
+        "KR",
+        "MX",
+        "PL",
+        "RU",
+        "TR",
+        "US",
+        "NL",
+        "ROW",
+        "SE",
+        "SG"
+      ],
+      "unique_platforms": 64,
+      "top_platforms": {
+        "prime": 16666310,
+        "netflix": 16652827,
+        "disney": 16647320,
+        "apple": 16646908,
+        "hbo": 16612641,
+        "mubi": 13585213,
+        "curiosity": 13585110,
+        "paramount": 13581436,
+        "britbox": 13575599,
+        "discovery": 13575599,
+        "tubi": 13570689,
+        "plutotv": 13570689,
+        "hulu": 13561281,
+        "peacock": 13561178,
+        "starz": 13561178,
+        "other": 9095160,
+        "videoland": 3031720,
+        "viu": 3031720,
+        "viaplay": 3031720,
+        "local": 3031720
+      },
+      "views": {
+        "column": "views",
+        "total": 1318138435776.3044,
+        "mean": 5343.122629152429,
+        "nulls": 16234176,
+        "null_pct": 6.174279373490486,
+        "zeros": 5040,
+        "negatives": 0
+      },
+      "duplicates": 0,
+      "views_by_country": {
+        "US": 490201296097.0649,
+        "CN": 161361020421.94702,
+        "IN": 105578382612.21373,
+        "GB": 85762471683.03804,
+        "BR": 66034306063.5391,
+        "DE": 59474849712.80407,
+        "JP": 52671060072.824844,
+        "FR": 46115943448.29039,
+        "CA": 46096189048.140175,
+        "MX": 39656124613.179634,
+        "AU": 33057504501.769905,
+        "ES": 26493014414.770374,
+        "IT": 26412357949.34026,
+        "KR": 23685620872.563995,
+        "ROW": 13044851890.464758,
+        "RU": 9375673192.912447,
+        "TR": 7500328387.201558,
+        "NL": 6530100218.459671,
+        "AR": 6262990317.555909,
+        "PL": 5004777820.173309,
+        "SE": 4564681630.872347,
+        "SG": 3254890807.177985
+      },
+      "status": "LOADED"
+    }
+  },
+  "comparison": {},
+  "suggestions": [
+    {
+      "type": "warning",
+      "category": "version",
+      "message": "VERSION MISMATCH: Star Schema is V24.00 but BFD is V24.02. Consider regenerating Star Schema to match BFD version."
+    },
+    {
+      "type": "warning",
+      "category": "schema",
+      "message": "COUNTRY COUNT: Expected 18 countries, found 22. Verify country allocation."
+    }
+  ]
+}

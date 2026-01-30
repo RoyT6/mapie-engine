@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-01-24T21:23:03.247199",
+  "database": "BFD_V27.02.parquet",
+  "rows": 765860,
+  "columns": 2302,
+  "file_size_gb": 3.1333082085475326,
+  "r2": 0.6637312490229794,
+  "mape": 9.345581634247115,
+  "anti_cheat_status": "PASS"
+}

@@ -1,0 +1,200 @@
+{
+  "timestamp": "2026-01-23T13:13:02.451359",
+  "validation_type": "Netflix_Ground_Truth_MAPE",
+  "tests": {},
+  "predicted_data": {
+    "file": "C:\\Users\\RoyT6\\Downloads\\Views TRaining Data\\normalized_output\\schema_conformant_views.csv",
+    "rows": 125529,
+    "columns": 962,
+    "views_columns": 946
+  },
+  "ground_truth": {
+    "file": "C:\\Users\\RoyT6\\Downloads\\Views TRaining Data\\netflix_training_data_per_season.csv",
+    "rows": 8895,
+    "total_views": 13458200000.0,
+    "unique_titles": 8670
+  },
+  "matching": {
+    "matched_by_fc_uid": 0,
+    "matched_by_title": 37885,
+    "total_matched": 8669
+  },
+  "top_20_comparison": [
+    {
+      "title": "Back in Action",
+      "title_type": "Movie",
+      "netflix_views": 164700000,
+      "predicted_total": 164700000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Straw",
+      "title_type": "Movie",
+      "netflix_views": 102900000,
+      "predicted_total": 102900000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "The Life List",
+      "title_type": "Movie",
+      "netflix_views": 95500000,
+      "predicted_total": 95500000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Exterritorial",
+      "title_type": "Movie",
+      "netflix_views": 87500000,
+      "predicted_total": 87500000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Havoc",
+      "title_type": "Movie",
+      "netflix_views": 86900000,
+      "predicted_total": 86900000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "The Secret Life of Pets 2",
+      "title_type": NaN,
+      "netflix_views": 74500000,
+      "predicted_total": 74500000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "The Electric State",
+      "title_type": "Movie",
+      "netflix_views": 74200000,
+      "predicted_total": 74200000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Counterattack // Contraataque",
+      "title_type": NaN,
+      "netflix_views": 71300000,
+      "predicted_total": 71300000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Despicable Me 4",
+      "title_type": "Movie",
+      "netflix_views": 69800000,
+      "predicted_total": 69800000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Ad Vitam",
+      "title_type": "Movie",
+      "netflix_views": 69800000,
+      "predicted_total": 69800000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "The Secret Life of Pets",
+      "title_type": NaN,
+      "netflix_views": 65900000,
+      "predicted_total": 65900000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Kinda Pregnant",
+      "title_type": "Movie",
+      "netflix_views": 58900000,
+      "predicted_total": 58900000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Nonnas",
+      "title_type": "Movie",
+      "netflix_views": 57600000,
+      "predicted_total": 57600000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "iHostage",
+      "title_type": "Movie",
+      "netflix_views": 57400000,
+      "predicted_total": 57400000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "La Dolce Villa",
+      "title_type": "Movie",
+      "netflix_views": 55500000,
+      "predicted_total": 55500000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "The Boss Baby",
+      "title_type": NaN,
+      "netflix_views": 55200000,
+      "predicted_total": 55200000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Minions",
+      "title_type": NaN,
+      "netflix_views": 54100000,
+      "predicted_total": 54100000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Shrek",
+      "title_type": NaN,
+      "netflix_views": 53500000,
+      "predicted_total": 53500000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Plankton: The Movie",
+      "title_type": "Movie",
+      "netflix_views": 50600000,
+      "predicted_total": 50600000,
+      "error_pct": 0.0
+    },
+    {
+      "title": "Despicable Me 3",
+      "title_type": NaN,
+      "netflix_views": 49100000,
+      "predicted_total": 49100000,
+      "error_pct": 0.0
+    }
+  ],
+  "anti_cheat": {
+    "mape_valid": false,
+    "mape_value": 0.6435704036328521,
+    "data_leakage_warning": true,
+    "r2_valid": "False",
+    "r2_value": 0.99964156862441,
+    "correlation": 0.999820768250195
+  },
+  "overall_status": "REVIEW",
+  "mape_results": {
+    "total_views": {
+      "mape": 0.6435704036328521,
+      "wmape": 0.30136842543013886,
+      "records": 8669
+    },
+    "country_level": {
+      "us": {
+        "mape": 7.135120431341616,
+        "records": 8669
+      },
+      "gb": {
+        "mape": 18.811087101397884,
+        "records": 8669
+      },
+      "br": {
+        "mape": 17.279918274196547,
+        "records": 8669
+      }
+    },
+    "by_title_type": {
+      "Movie": {
+        "mape": 0.6922987069568726,
+        "records": 313
+      }
+    }
+  }
+}

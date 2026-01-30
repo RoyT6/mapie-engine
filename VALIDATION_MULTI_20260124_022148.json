@@ -1,0 +1,68 @@
+{
+  "timestamp": "2026-01-24T02:19:27.608594",
+  "files": {
+    "bfd_v24_02": {
+      "file": "BFD_V26.00.parquet",
+      "schema_version": "26.00",
+      "upgrade_needed": true,
+      "rows": 765860,
+      "columns": 2299,
+      "file_size_bytes": 4347985919,
+      "load_time": 35.001503,
+      "schema": {
+        "required_found": 3,
+        "required_missing": [],
+        "optional_found": 7,
+        "abstract_signals": 20,
+        "views_columns": 1807,
+        "wvv_columns": 0,
+        "v27_temporal_found": 21,
+        "v27_temporal_missing": [],
+        "views_weekly_columns": 23,
+        "v27_monthly_pattern_columns": 1,
+        "v27_weekly_pattern_columns": 23,
+        "v27_hours_columns": 1,
+        "v27_parrot_columns": 9,
+        "v27_compliant": true
+      },
+      "views_computed": {
+        "nulls": 53252,
+        "null_pct": 6.953229049695767,
+        "zeros": 0,
+        "negatives": 0,
+        "mean": 865805.8144477749,
+        "median": 836912.0,
+        "min": 50000.0,
+        "max": 4376364.0
+      },
+      "unreleased_status": 9524,
+      "future_years": 28,
+      "anti_cheat": {
+        "r2": 0.6639881310417659,
+        "mape": 9.345335508218358,
+        "r2_valid": "True",
+        "mape_valid": "True",
+        "status": "PASS"
+      },
+      "status": "LOADED"
+    },
+    "star_schema_v24_00": {
+      "file": "BFD_Star_Schema_V24.00.parquet",
+      "status": "ERROR",
+      "error": "[Errno 2] No such file or directory: '/mnt/c/Users/RoyT6/Downloads/BFD_Star_Schema_V24.00.parquet'"
+    }
+  },
+  "comparison": {},
+  "suggestions": [
+    {
+      "type": "warning",
+      "category": "version",
+      "message": "VERSION MISMATCH: Star Schema is V24.00 but BFD is V24.02. Consider regenerating Star Schema to match BFD version."
+    },
+    {
+      "type": "warning",
+      "category": "schema",
+      "message": "COUNTRY COUNT: Expected 18 countries, found 0. Verify country allocation."
+    }
+  ]
+}

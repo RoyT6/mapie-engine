@@ -1,0 +1,76 @@
+{
+  "audit_log_version": "1.0",
+  "engine": "MAPIE ENGINE",
+  "timestamp": "2026-01-24T02:19:27.608594",
+  "database": {
+    "file": "BFD_V26.00.parquet",
+    "rows": 765860,
+    "columns": 2299,
+    "file_size_bytes": 4347985919,
+    "load_time_seconds": 35.0
+  },
+  "gpu_execution": {
+    "gpu": "NVIDIA GeForce RTX 3080 Ti",
+    "vram_total_gb": 12.9,
+    "vram_free_gb": 11.6,
+    "execution_time_seconds": 146.96
+  },
+  "schema_analysis": {
+    "required_columns_found": 3,
+    "required_columns_missing": [],
+    "optional_columns_found": 7,
+    "abstract_signals": 20,
+    "views_columns": 1807,
+    "v27_temporal_found": 21,
+    "v27_temporal_compliant": true,
+    "views_weekly_columns": 23,
+    "parrot_analytics_columns": 9
+  },
+  "data_quality": {
+    "views_computed": {
+      "mean": 865806,
+      "median": 836912,
+      "min": 50000,
+      "max": 4376364,
+      "null_count": 53252,
+      "null_percentage": 6.95,
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "temporal_filters": {
+      "unreleased_by_status": 9524,
+      "future_start_year": 28,
+      "rows_after_temporal_filter": 712608
+    }
+  },
+  "anti_cheat_validation": {
+    "status": "PASS",
+    "r2": 0.6640,
+    "r2_valid": true,
+    "r2_valid_range": "0.30 - 0.90",
+    "mape": 9.35,
+    "mape_valid": true,
+    "mape_valid_range": "5% - 40%",
+    "model": "XGBoost",
+    "n_estimators": 1350,
+    "features_used": "20 abstract signal columns",
+    "test_set_size": "20% of filtered data"
+  },
+  "recommendations": [
+    {"type": "info", "message": "Star Schema file not found - regenerate if needed"},
+    {"type": "info", "message": "Database is V27.00 temporal compliant"},
+    {"type": "success", "message": "Anti-cheat validation PASSED with healthy metrics"}
+  ],
+  "four_rules_compliance": {
+    "V1_proof_of_work": true,
+    "V2_checksum": true,
+    "V3_logging": true,
+    "V4_machine_validated": true
+  },
+  "signature": {
+    "engine": "MAPIE Engine",
+    "algo_version": "95.4",
+    "schema_version": "V26.00",
+    "role": "LEDGER + OPTIMIZER"
+  }
+}

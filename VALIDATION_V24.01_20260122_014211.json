@@ -1,0 +1,63 @@
+{
+  "timestamp": "2026-01-22T01:40:26.333667",
+  "version": "24.01",
+  "tests": {
+    "load": {
+      "status": "PASS",
+      "rows": 765860,
+      "columns": 1699,
+      "load_time_seconds": 18.457538
+    },
+    "schema": {
+      "status": "PASS",
+      "required_found": 3,
+      "required_total": 3,
+      "optional_found": 8,
+      "abstract_signals": 20
+    },
+    "data_quality": {
+      "status": "PASS",
+      "views_mean": NaN,
+      "views_std": NaN,
+      "views_min": NaN,
+      "views_max": NaN,
+      "null_count": 53252,
+      "zero_count": 0,
+      "negative_count": 0
+    },
+    "sine_wave": {
+      "status": "PASS",
+      "max_single_freq_pct": NaN,
+      "interpretation": "Natural variation"
+    },
+    "aberration": {
+      "status": "PASS",
+      "z2_outliers": 0,
+      "z3_outliers": 0,
+      "z4_outliers": 0,
+      "z3_outliers_pct": 0.0,
+      "iqr_outliers": 0,
+      "skewness": NaN,
+      "kurtosis": NaN
+    },
+    "anti_cheat": {
+      "status": "PASS",
+      "r2": 0.664518107434587,
+      "mape": 9.308416795665778,
+      "r2_valid": "True",
+      "mape_valid": "True",
+      "trees": 1350,
+      "rows_used": 712608,
+      "rows_excluded": 53252,
+      "temporal_filter": "Applied"
+    },
+    "release_validation": {
+      "status": "PASS",
+      "unreleased_by_status": 9524,
+      "future_years": 28,
+      "current_year": 2026
+    }
+  },
+  "overall": "PASS",
+  "file_tested": "BFD_V24.01.parquet"
+}

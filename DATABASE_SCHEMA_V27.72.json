@@ -1,0 +1,176 @@
+{
+  "schema_version": "27.72",
+  "created": "2026-01-27",
+  "description": "MAPIE Database Schema Mapping - Split BFD Architecture",
+
+  "database_files": {
+    "BFD_META": {
+      "file_pattern": "BFD_META_V{version}.parquet",
+      "current_file": "BFD_META_V27.72.parquet",
+      "rows": 514070,
+      "columns": 1407,
+      "primary_key": "fc_uid",
+      "description": "Core metadata, content attributes, quarterly views by country, abstract signals, ML predictions",
+      "column_groups": {
+        "identifiers": ["fc_uid", "tmdb_id", "imdb_id", "thetvdb_id", "trakt_id"],
+        "title_info": ["title", "original_title", "title_type", "season_number", "max_seasons", "season_episodes", "total_episodes"],
+        "dates": ["start_year", "end_year", "premiere_date", "finale_date", "streaming_release_date", "streaming_premiere_date"],
+        "content_attrs": ["runtime_minutes", "genres", "is_adult", "status", "original_language", "regions", "age_certification"],
+        "production": ["studio", "production_company", "production_country", "creators", "directors", "writers", "producers", "cast_data"],
+        "ratings": ["imdb_score", "imdb_vote_count", "tmdb_score", "tmdb_vote_count", "tmdb_popularity", "rottentomatoes_score", "metacritic_score", "confidence_score"],
+        "streaming": ["streaming_platform", "streaming_platform_us", "streaming_platform_gb", "streaming_platform_global", "streaming_platform_usa", "streaming_platform_uk"],
+        "quarterly_views": {
+          "pattern": "views_q{quarter}_{year}_{country}",
+          "countries": ["ar", "au", "be", "br", "ca", "cn", "de", "dk", "es", "fi", "fr", "gb", "hk", "ie", "in", "it", "jp", "kr", "mx", "nl", "no", "nz", "pl", "pt", "ru", "se", "sg", "tr", "us", "za", "row", "total"],
+          "years": [2019, 2020, 2021, 2022, 2023, 2024, 2025, 2026],
+          "quarters": [1, 2, 3, 4]
+        },
+        "abstract_signals": {
+          "prefix": "abs_",
+          "signals": ["social_buzz", "trend_velocity", "critical_score", "audience_score", "award_momentum", "seasonal_index", "search_volume", "twitter_mentions", "instagram_engagement", "news_aberration", "weather_impact", "holiday_weight", "sports_competition", "sub_growth_region", "decay_position", "franchise_value", "star_power", "budget_tier", "marketing_spend", "platform_reach"]
+        },
+        "computed_weights": ["studio_weight", "studio_weight_S_i", "genre_decay_T_g", "base_prediction"],
+        "ml_predictions": ["views_y_pred", "views_pred_xgboost", "views_pred_catboost", "views_pred_lightgbm", "views_pred_randomforest"],
+        "country_predictions": {
+          "pattern": "views_y_pred_{country}",
+          "countries": ["us", "cn", "in", "gb", "br", "de", "jp", "fr", "ca", "mx", "au", "es", "it", "kr", "nl", "se", "sg", "row"]
+        },
+        "regional_views": ["views_y", "views_monthly", "views_quarterly", "views_domestic", "views_international", "views_emea", "views_latam", "views_apac"],
+        "engagement_metrics": ["completion_rate", "repetition_index", "engagement_velocity", "attribution_confidence", "binge_rate_index", "rewatch_index", "wvv", "hours_per_view"],
+        "validation": ["release_validated", "canon_compliance", "is_deleted"],
+        "metadata": ["data_origin", "source_reference", "last_updated", "row_hash", "content_hash", "created_at", "modified_by", "schema_version"],
+        "key_output": ["views_computed", "views_y_source"]
+      }
+    },
+
+    "BFD_ML": {
+      "file_pattern": "BFD_ML_V{version}.parquet",
+      "current_file": "BFD_ML_V27.72.parquet",
+      "rows": 514070,
+      "columns": 398,
+      "primary_key": "fc_uid",
+      "description": "Machine learning features - lag features, rolling averages, encoded categories",
+      "column_groups": {
+        "lag_features": {
+          "description": "Time-lagged values for various metrics",
+          "pattern": "{metric}_lag{days}",
+          "lag_periods": [7, 14, 28, 56, 91]
+        },
+        "rolling_features": {
+          "description": "Rolling window averages",
+          "pattern": "{metric}_roll{days}",
+          "roll_periods": [7, 14, 28]
+        },
+        "categorical_encoded": {
+          "description": "One-hot and label encoded categorical features",
+          "examples": ["genre_encoded", "studio_encoded", "platform_encoded"]
+        }
+      }
+    },
+
+    "BFD_VIEWS": {
+      "file_pattern": "BFD_VIEWS_V{version}.parquet",
+      "current_file": "BFD_VIEWS_V27.72.parquet",
+      "rows": 514070,
+      "columns": 493,
+      "primary_key": "fc_uid",
+      "description": "Ground truth and estimated views data - half-yearly breakdowns, source-specific views",
+      "column_groups": {
+        "source_views": {
+          "netflix_views": "Direct Netflix reported views",
+          "netflix_hours_viewed": "Netflix hours watched",
+          "nielsen_viewers_millions": "Nielsen TV ratings",
+          "flixpatrol_points": "FlixPatrol ranking points",
+          "parrot_demand_expressions": "Parrot Analytics demand"
+        },
+        "half_yearly_views": {
+          "pattern": "views_h{half}_{year}_{country}",
+          "halves": [1, 2],
+          "years": [2023, 2024, 2025, 2026],
+          "countries": ["ar", "au", "be", "br", "ca", "cn", "de", "dk", "es", "fi", "fr", "gb", "hk", "ie", "in", "it", "jp", "kr", "mx", "nl", "no", "nz", "pl", "pt", "ru", "se", "sg", "tr", "us", "za", "row", "total"]
+        },
+        "estimated": ["views_estimated"]
+      }
+    },
+
+    "CREATIVE_TALENT": {
+      "file_pattern": "CREATIVE_TALENT_V{version}.parquet",
+      "current_file": "CREATIVE_TALENT_V27.66.parquet",
+      "rows": 74138,
+      "columns": 7,
+      "primary_key": "fc_uid",
+      "description": "Cast and crew credits data",
+      "columns": {
+        "fc_uid": "Foreign key to BFD_META",
+        "title": "Title name",
+        "role": "Character/role name",
+        "name": "Person's name",
+        "billing_order": "Cast billing position",
+        "credit_type": "Type of credit (actor, director, writer, etc.)",
+        "source": "Data source"
+      }
+    },
+
+    "SEASON_AGGREGATES": {
+      "file_pattern": "SEASON_AGGREGATES_V{version}.parquet",
+      "current_file": "SEASON_AGGREGATES_V27.66.parquet",
+      "rows": 149550,
+      "columns": 4,
+      "primary_key": ["show_imdb_id", "season_number"],
+      "description": "Season-level aggregation for TV series",
+      "columns": {
+        "show_imdb_id": "IMDb ID of the show",
+        "season_number": "Season number",
+        "season_premiere_year": "Year season premiered",
+        "fc_uid": "Foreign key to BFD_META for this season"
+      }
+    }
+  },
+
+  "mapie_column_mapping": {
+    "old_single_bfd": {
+      "description": "Mapping from old Cranberry_BFD columns to new split architecture",
+      "id_columns": {
+        "fc_uid": "BFD_META.fc_uid",
+        "imdb_id": "BFD_META.imdb_id",
+        "tmdb_id": "BFD_META.tmdb_id"
+      },
+      "views_computed": "BFD_META.views_computed",
+      "views_y": "BFD_META.views_y",
+      "ground_truth": "BFD_VIEWS.netflix_views OR BFD_VIEWS.views_estimated",
+      "abstract_signals": "BFD_META.abs_*",
+      "ml_features": "BFD_ML.*",
+      "predictions": "BFD_META.views_pred_*"
+    }
+  },
+
+  "mape_calculation": {
+    "primary_target": "BFD_META.views_computed",
+    "ground_truth_sources": [
+      {"column": "BFD_VIEWS.netflix_views", "priority": 1, "description": "Direct Netflix data"},
+      {"column": "BFD_VIEWS.views_estimated", "priority": 2, "description": "Estimated from multiple sources"},
+      {"column": "BFD_META.views_y", "priority": 3, "description": "Target variable"}
+    ],
+    "prediction_columns": [
+      "BFD_META.views_y_pred",
+      "BFD_META.views_pred_xgboost",
+      "BFD_META.views_pred_catboost",
+      "BFD_META.views_pred_lightgbm",
+      "BFD_META.views_pred_randomforest"
+    ]
+  },
+
+  "countries": {
+    "tier_1": ["us", "gb", "de", "fr", "jp", "ca", "au"],
+    "tier_2": ["br", "mx", "it", "es", "kr", "nl", "se", "in"],
+    "tier_3": ["ar", "be", "cn", "dk", "fi", "hk", "ie", "no", "nz", "pl", "pt", "ru", "sg", "tr", "za"],
+    "aggregate": ["row", "total"]
+  },
+
+  "join_keys": {
+    "BFD_META_to_BFD_ML": "fc_uid",
+    "BFD_META_to_BFD_VIEWS": "fc_uid",
+    "BFD_META_to_CREATIVE_TALENT": "fc_uid",
+    "BFD_META_to_SEASON_AGGREGATES": "imdb_id = show_imdb_id"
+  }
+}

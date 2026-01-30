@@ -1,0 +1,26 @@
+{
+  "signal_name": "CREDIBILITY_EXTERNAL_10",
+  "signal_type": "adjustment_multiplier",
+  "version": "10.0",
+  "created": "2026-01-18T10:57:04.964861",
+  "description": "External popularity validation signal for MAPIE",
+  "mapie_weights": {
+    "imdb_weight": 0.5,
+    "rt_weight": 0.3,
+    "flixpatrol_weight": 0.2
+  },
+  "genre_corrections": {
+    "anime": 0.65,
+    "animation": 0.75,
+    "korean_drama": 0.8,
+    "prestige_drama": 1.4,
+    "reality": 1.1,
+    "documentary": 1.15
+  },
+  "integration": {
+    "phase": "PHASE_5.5",
+    "operation": "multiply",
+    "column": "views_y",
+    "output_column": "views_y_credibility_adjusted"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": "18.06",
+  "timestamp": "2026-01-15T15:45:51.071322",
+  "fix_description": "Full TMDB API Verification",
+  "api_calls_made": 632,
+  "actually_released_found": 172,
+  "rows_fixed": 1784,
+  "bfd": {
+    "file": "/mnt/c/Users/RoyT6/Downloads/Cranberry_BFD_V18.06.parquet",
+    "rows": 768641,
+    "columns": 1714
+  },
+  "star_schema": {
+    "file": "/mnt/c/Users/RoyT6/Downloads/Cranberry_Star_Schema_V18.06.parquet",
+    "rows": 204192985
+  },
+  "verification": {
+    "unreleased_before": 7238,
+    "unreleased_after": 6438,
+    "all_pass": true
+  },
+  "runtime_minutes": 6.07
+}

@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-01-16T23:24:53.464348",
+  "tests": {
+    "sine_wave": {
+      "status": "WARNING",
+      "max_single_freq_pct": 65.57333085023234,
+      "interpretation": "Long-period variations are expected in viewership data (seasonal, release cycles)"
+    },
+    "aberration": {
+      "status": "PASS",
+      "z3_outliers_pct": 1.6505192887057156,
+      "cv_pct": 21.785916765647983,
+      "skewness": 2.611295314296879,
+      "kurtosis": 12.184956201034394
+    },
+    "ensemble": {
+      "xgboost": {
+        "r2": 0.6856253152069803,
+        "mape": 8.720593711827545,
+        "trees": 1350
+      },
+      "catboost": {
+        "r2": 0.6715269090874186,
+        "mape": 8.995929390748227,
+        "trees": 1350
+      },
+      "cuml_rf": {
+        "r2": 0.6499491415061118,
+        "mape": 9.43607322181676,
+        "trees": 1350
+      },
+      "ensemble": {
+        "r2": 0.6833495062825583,
+        "mape": 8.859770999634977,
+        "weights": "52/35/13"
+      },
+      "anti_cheat": {
+        "r2_valid": "True",
+        "mape_valid": "True",
+        "status": "PASS"
+      }
+    },
+    "ground_truth": [
+      {
+        "source": "Aggregated_IMDB",
+        "matched": 1984,
+        "correlation": 0.36629576552404286,
+        "mape": 82.07387835671585
+      }
+    ],
+    "benchmark": {
+      "viewerdbx_mape": 8.859770999634977,
+      "viewerdbx_r2": 0.6833495062825583,
+      "vs_industry": "COMPETITIVE - within industry standard ranges"
+    }
+  },
+  "overall": "PASS",
+  "files_tested": [
+    "Cranberry_BFD_MAPIE_RUN_20260116_V19.87.parquet",
+    "Cranberry_Star_Schema_MAPIE_RUN_20260116_V19.87.parquet"
+  ]
+}
