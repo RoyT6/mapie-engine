@@ -294,14 +294,32 @@ All rules verified for merge operation:
 3. **Remaining Titles:** ~18,000 Netflix titles without BFD matches still need fc_uid resolution
 4. **MAPE 0%:** Expected for matched titles since BFD now contains actual Netflix data
 
-### Pending Work
+### Pending Work - CRITICAL
 
-1. Resolve fc_uid matching for remaining ~18,000 Netflix titles
-2. Investigate fc_uid format differences between sources
-3. Consider base IMDB ID matching (16,676 base ID overlap exists)
+1. **Use GPU Engine / Parallel Engine for IMDB Reference merge** - DO NOT use single-threaded pandas
+2. Reference file: `Training Data/IMDB Ref Files/224 thousand imdb_fcuid_records.csv` (224,373 records)
+3. This file bridges Netflix Symphony fc_uid to BFD fc_uid via title+season matching
+4. Must use RAPIDS/cuDF or multiprocessing with shared memory (not spawn)
+
+### Scripts Created (Not Yet Executed)
+
+| File | Purpose | Status |
+|------|---------|--------|
+| `merge_netflix_via_imdb_ref.py` | IMDB reference bridge merge | NOT RUN - too slow |
+| `merge_netflix_parallel.py` | 14-worker parallel merge | FAILED - memory issues with spawn |
+| `merge_netflix_optimized.py` | Vectorized pandas | REJECTED - single-threaded |
+
+### Required Next Session
+
+Use GPU Engine with RAPIDS/cuDF for the merge:
+- Load all data into GPU memory
+- Use cuDF merge operations (much faster)
+- Reference: `Parallel Engine/CLAUDE.md` for optimal worker configs
+- System: Ryzen 9 3950X (16c/32t), 128GB RAM, RTX 3080Ti (12GB VRAM)
 
 ### Git Commits
 
+- `7ae3239` - Update CLAUDE.md with session log
 - `ba73a13` - Execute Netflix Symphony to BFD merge
 - `794371f` - Add MAPE analysis identifying data source mismatch
 - `0e03cb3` - Add MAPIE validation scripts and reports
