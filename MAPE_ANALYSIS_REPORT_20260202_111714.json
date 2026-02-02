@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-02-02T11:17:14.890247",
+  "finding": "BFD database contains FlixPatrol estimates, not Netflix published data",
+  "bfd_database": {
+    "rows": 774886,
+    "views_h1_2024_max": 1594719.0,
+    "views_h1_2024_mean": 248747.59375,
+    "views_source": "FlixPatrol estimated views (ranking-based)"
+  },
+  "netflix_symphony": {
+    "rows": 96279,
+    "views_1hy_2024_max": 143800000.0,
+    "views_1hy_2024_mean": 1497729.1009219727,
+    "views_source": "Netflix published actual views"
+  },
+  "comparison": {
+    "matched_titles": 25086,
+    "valid_comparisons": 4041,
+    "mape_percent": 110.54,
+    "median_ape_percent": 75.64,
+    "correlation": 0.1274,
+    "mean_ratio": 1.3844,
+    "median_ratio": 0.73
+  },
+  "netflix_internal_consistency": {
+    "reconstruction_mape_percent": 0.0,
+    "note": "Q1+Q2 vs H1 reconstruction accuracy in Netflix Symphony"
+  },
+  "anti_cheat_check": {
+    "mape_in_valid_range": false,
+    "valid_range": "5% - 40%",
+    "status": "FAIL - HIGH (FlixPatrol vs Netflix mismatch)",
+    "recommendation": "Replace BFD views with Netflix Symphony data for matched titles"
+  }
+}
