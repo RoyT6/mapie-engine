@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 """
-MAPE SCORE CALCULATION
-======================
-Compares FlixPatrol views in merged database against Netflix published actuals
+MAPE SCORE CALCULATION - FIXED
+==============================
+Properly aligns FlixPatrol quarterly data with Netflix semi-annual published views
 """
 import pandas as pd
 import numpy as np
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 import warnings
@@ -26,100 +27,142 @@ print('[1] Loading merged database...')
 db = pd.read_parquet(BASE / 'BFD-Views-2026-Feb-2.00.parquet')
 print(f'    Rows: {len(db):,} | Columns: {len(db.columns)}')
 
-# Get views columns
-views_cols = [c for c in db.columns if c.startswith('views_') and '_total' in c]
-print(f'    Views columns: {len(views_cols)}')
+# Create H1/H2 aggregations from quarterly data (Q1+Q2=H1, Q3+Q4=H2)
+print()
+print('[2] Aggregating quarterly views to semi-annual (H1/H2)...')
 
-# Calculate total FlixPatrol views per title
-db['flixpatrol_total'] = db[views_cols].sum(axis=1)
-db_with_views = db[db['flixpatrol_total'] > 0].copy()
-print(f'    Titles with FlixPatrol views: {len(db_with_views):,}')
+for year in ['2024', '2025']:
+    # H1 = Q1 + Q2
+    q1_col = f'views_q1_{year}_total'
+    q2_col = f'views_q2_{year}_total'
+    h1_col = f'views_h1_{year}_total'
+    if q1_col in db.columns and q2_col in db.columns:
+        db[h1_col] = db[q1_col].fillna(0) + db[q2_col].fillna(0)
+        print(f'    Created {h1_col} from {q1_col} + {q2_col}')
+
+    # H2 = Q3 + Q4
+    q3_col = f'views_q3_{year}_total'
+    q4_col = f'views_q4_{year}_total'
+    h2_col = f'views_h2_{year}_total'
+    if q3_col in db.columns and q4_col in db.columns:
+        db[h2_col] = db[q3_col].fillna(0) + db[q4_col].fillna(0)
+        print(f'    Created {h2_col} from {q3_col} + {q4_col}')
 
 # Load Netflix actual published data
 print()
-print('[2] Loading Netflix published actuals...')
+print('[3] Loading Netflix published actuals...')
 
-netflix_data = []
-
-# Load all Netflix engagement reports
 as_published = ORIGINALS / 'As Published'
-print(f'    Looking in: {as_published}')
-print(f'    Exists: {as_published.exists()}')
 
-netflix_files = list(as_published.glob('*.xlsx')) if as_published.exists() else []
-print(f'    Found {len(netflix_files)} Excel files')
+# Map Netflix files to time periods
+netflix_periods = {
+    'What_We_Watched_A_Netflix_Engagement_Report_2024Jan-Jun.xlsx': ('h1', '2024'),
+    'What_We_Watched_A_Netflix_Engagement_Report_2024Jul-Dec.xlsx': ('h2', '2024'),
+    'What_We_Watched_A_Netflix_Engagement_Report_2025Jan-Jun.xlsx': ('h1', '2025'),
+    'What_We_Watched_A_Netflix_Engagement_Report_2025Jul-Dec__6_.xlsx': ('h2', '2025'),
+}
 
-for nf_file in netflix_files:
-    if nf_file.exists():
-        try:
-            nf = pd.read_excel(nf_file, skiprows=5)
-            # Find title and views columns
-            title_col = None
-            views_col = None
-            for c in nf.columns:
-                if 'title' in str(c).lower():
-                    title_col = c
-                if 'view' in str(c).lower() and 'hour' not in str(c).lower():
-                    views_col = c
-                if 'hour' in str(c).lower():
-                    views_col = c  # Fallback to hours
+all_comparisons = []
 
-            if title_col and views_col:
-                nf_clean = nf[[title_col, views_col]].dropna()
-                nf_clean.columns = ['title', 'views']
-                nf_clean['views'] = pd.to_numeric(nf_clean['views'], errors='coerce')
-                netflix_data.append(nf_clean)
-                print(f'    Loaded: {nf_file.name} ({len(nf_clean):,} titles)')
-        except Exception as e:
-            print(f'    Error loading {nf_file.name}: {e}')
+for filename, (period, year) in netflix_periods.items():
+    filepath = as_published / filename
+    if not filepath.exists():
+        print(f'    [SKIP] {filename} not found')
+        continue
 
-if netflix_data:
-    netflix_all = pd.concat(netflix_data, ignore_index=True)
-    # Aggregate by title
-    netflix_agg = netflix_all.groupby('title')['views'].sum().reset_index()
-    netflix_agg['title_clean'] = netflix_agg['title'].str.lower().str.strip()
-    print(f'    Total Netflix titles: {len(netflix_agg):,}')
-    print(f'    Total Netflix views: {netflix_agg["views"].sum():,.0f}')
-else:
-    print('    ERROR: No Netflix data loaded')
-    exit(1)
+    print(f'    Loading: {filename} -> {period.upper()} {year}')
 
-# Match and calculate MAPE
-print()
-print('[3] Matching titles and calculating MAPE...')
+    nf = pd.read_excel(filepath, skiprows=5)
 
-db_with_views['title_clean'] = db_with_views['title'].str.lower().str.strip()
+    # Find title and views columns
+    title_col = 'Title' if 'Title' in nf.columns else None
+    views_col = 'Views' if 'Views' in nf.columns else None
 
-# Merge on title
-merged = db_with_views.merge(netflix_agg, on='title_clean', how='inner', suffixes=('', '_netflix'))
+    if not title_col or not views_col:
+        print(f'      [ERROR] Missing columns: {list(nf.columns)}')
+        continue
 
-print(f'    Matched titles: {len(merged):,}')
+    nf_clean = nf[[title_col, views_col]].dropna()
+    nf_clean.columns = ['netflix_title', 'netflix_views']
+    nf_clean['netflix_views'] = pd.to_numeric(nf_clean['netflix_views'], errors='coerce')
+    nf_clean = nf_clean[nf_clean['netflix_views'] > 0]
 
-if len(merged) > 0:
-    # Netflix 'Views' column is actual views count
-    merged['netflix_views'] = merged['views']
+    print(f'      Titles: {len(nf_clean):,}')
 
-    # Calculate APE for each title
-    merged['ape'] = np.abs(merged['flixpatrol_total'] - merged['netflix_views']) / merged['netflix_views']
-    merged['ape'] = merged['ape'].replace([np.inf, -np.inf], np.nan)
+    # Clean Netflix titles for matching
+    def clean_title(t):
+        t = str(t).lower().strip()
+        # Remove season/series suffixes for matching
+        t = re.sub(r':\s*(season\s*\d+|limited\s*series|series\s*\d+).*$', '', t, flags=re.IGNORECASE)
+        t = re.sub(r'\s+', ' ', t)
+        return t.strip()
 
-    # Filter valid APE values
-    valid = merged[merged['ape'].notna() & (merged['ape'] < 10)]  # Cap at 1000% error
+    nf_clean['title_clean'] = nf_clean['netflix_title'].apply(clean_title)
 
-    # MAPE calculation
-    mape = valid['ape'].mean() * 100
-    median_ape = valid['ape'].median() * 100
+    # Get the corresponding FlixPatrol column
+    fp_col = f'views_{period}_{year}_total'
+
+    if fp_col not in db.columns:
+        print(f'      [ERROR] Column {fp_col} not in database')
+        continue
+
+    # Clean database titles
+    db['title_clean'] = db['title'].apply(clean_title)
+
+    # Merge on cleaned title
+    merged = nf_clean.merge(
+        db[['title_clean', fp_col, 'title', 'fc_uid']],
+        on='title_clean',
+        how='inner'
+    )
+
+    merged = merged[merged[fp_col] > 0]
+
+    print(f'      Matched: {len(merged):,}')
+
+    if len(merged) > 0:
+        # Calculate APE
+        merged['ape'] = np.abs(merged[fp_col] - merged['netflix_views']) / merged['netflix_views']
+        merged['period'] = f'{period.upper()} {year}'
+        merged['fp_views'] = merged[fp_col]
+        all_comparisons.append(merged[['netflix_title', 'title', 'fc_uid', 'netflix_views', 'fp_views', 'ape', 'period']])
+
+# Combine all comparisons
+if all_comparisons:
+    all_data = pd.concat(all_comparisons, ignore_index=True)
+
+    # Filter valid APE (< 1000%)
+    valid = all_data[all_data['ape'] < 10]
 
     print()
     print('='*80)
     print('MAPE RESULTS')
     print('='*80)
-    print(f'  Matched Titles:     {len(valid):,}')
+    print(f'  Total Comparisons:  {len(all_data):,}')
+    print(f'  Valid Comparisons:  {len(valid):,}')
+
+    mape = valid['ape'].mean() * 100
+    median_ape = valid['ape'].median() * 100
+
+    print()
     print(f'  MAPE:               {mape:.2f}%')
     print(f'  Median APE:         {median_ape:.2f}%')
-    print()
 
-    # Breakdown by error range
+    # Correlation
+    corr = valid['fp_views'].corr(valid['netflix_views'])
+    print(f'  Correlation (r):    {corr:.4f}')
+    print(f'  R-squared:          {corr**2:.4f}')
+
+    # By period
+    print()
+    print('  MAPE by Period:')
+    for period in valid['period'].unique():
+        period_data = valid[valid['period'] == period]
+        period_mape = period_data['ape'].mean() * 100
+        print(f'    {period}: {period_mape:.2f}% ({len(period_data):,} titles)')
+
+    # Error distribution
+    print()
     print('  Error Distribution:')
     ranges = [(0, 10), (10, 25), (25, 50), (50, 100), (100, 500), (500, 1000)]
     for low, high in ranges:
@@ -127,49 +170,45 @@ if len(merged) > 0:
         pct = count / len(valid) * 100
         print(f'    {low:>4}% - {high:<4}%: {count:>6,} titles ({pct:>5.1f}%)')
 
-    # Correlation
-    corr = valid['flixpatrol_total'].corr(valid['netflix_views'])
-    print()
-    print(f'  Correlation (r):    {corr:.4f}')
-    print(f'  R-squared:          {corr**2:.4f}')
-
-    # Top matches (lowest error)
+    # Best matches
     print()
     print('  Top 10 Best Matches (Lowest APE):')
-    top = valid.nsmallest(10, 'ape')[['title', 'flixpatrol_total', 'netflix_views', 'ape']]
+    top = valid.nsmallest(10, 'ape')
     for _, row in top.iterrows():
-        print(f'    {row["title"][:40]:<40} FP:{row["flixpatrol_total"]:>12,.0f} NF:{row["netflix_views"]:>12,.0f} APE:{row["ape"]*100:>6.1f}%')
+        print(f'    {row["netflix_title"][:35]:<35} NF:{row["netflix_views"]:>12,.0f} FP:{row["fp_views"]:>12,.0f} APE:{row["ape"]*100:>6.1f}%')
 
-    # Summary
-    results = {
-        'timestamp': datetime.now().isoformat(),
-        'matched_titles': len(valid),
-        'mape_percent': round(mape, 2),
-        'median_ape_percent': round(median_ape, 2),
-        'correlation': round(corr, 4),
-        'r_squared': round(corr**2, 4),
-        'flixpatrol_total_views': int(valid['flixpatrol_total'].sum()),
-        'netflix_total_views': int(valid['netflix_views'].sum()),
-        'anti_cheat_check': {
-            'mape_in_valid_range': bool(5.0 <= mape <= 40.0),
-            'valid_range': '5% - 40%'
-        }
-    }
-
+    # Anti-cheat
     print()
     print('='*80)
     print('ANTI-CHEAT VALIDATION')
     print('='*80)
     print(f'  MAPE Valid Range:   5% - 40%')
     print(f'  Actual MAPE:        {mape:.2f}%')
-    print(f'  Status:             {"PASS - Within valid range" if 5.0 <= mape <= 40.0 else "REVIEW - Outside expected range"}')
+    status = 'PASS' if 5.0 <= mape <= 40.0 else 'REVIEW'
+    print(f'  Status:             {status}')
     print('='*80)
 
     # Save results
+    results = {
+        'timestamp': datetime.now().isoformat(),
+        'total_comparisons': len(all_data),
+        'valid_comparisons': len(valid),
+        'mape_percent': round(mape, 2),
+        'median_ape_percent': round(median_ape, 2),
+        'correlation': round(corr, 4),
+        'r_squared': round(corr**2, 4),
+        'by_period': {p: {'mape': round(valid[valid['period']==p]['ape'].mean()*100, 2),
+                         'count': len(valid[valid['period']==p])}
+                     for p in valid['period'].unique()},
+        'anti_cheat_check': {
+            'mape_in_valid_range': bool(5.0 <= mape <= 40.0),
+            'valid_range': '5% - 40%'
+        }
+    }
+
     output_file = BASE / 'MAPIE Engine' / f'MAPE_SCORES_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
     with open(output_file, 'w') as f:
         json.dump(results, f, indent=2)
     print(f'\nResults saved: {output_file}')
-
 else:
-    print('    ERROR: No matching titles found')
+    print('\nERROR: No comparisons generated')
