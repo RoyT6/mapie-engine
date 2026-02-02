@@ -76,8 +76,19 @@ import cupy as cp
 import pandas as pd
 import numpy as np
 
-# Add Components to path for FILE_AUDIT_TRACKER
-sys.path.insert(0, '/mnt/c/Users/RoyT6/Downloads/Components')
+# Platform-aware path detection
+import platform as _platform
+def _get_base_path():
+    """Get base path based on platform (Windows vs WSL)."""
+    if _platform.system() == 'Windows':
+        return r'C:\Users\RoyT6\Downloads'
+    else:
+        return '/mnt/c/Users/RoyT6/Downloads'
+
+_BASE_PATH = _get_base_path()
+
+# Add Components Engine to path for FILE_AUDIT_TRACKER
+sys.path.insert(0, f'{_BASE_PATH}/Components Engine/Older Library')
 try:
     from FILE_AUDIT_TRACKER import init_audit_tracker, get_audit_tracker
     AUDIT_TRACKER_AVAILABLE = True
@@ -92,9 +103,9 @@ start_time = time.time()
 run_id = f"MAPIE-RUN-{datetime.now().strftime('%Y%m%d-%H%M%S')}"
 
 # ============================================================================
-# DATABASE VERSION
+# DATABASE VERSION (updated to current)
 # ============================================================================
-DB_VERSION = "19.83"
+DB_VERSION = "27.73"
 
 # ============================================================================
 # TOPOLOGY v8.0: 18 COUNTRIES (Page 10)
@@ -145,28 +156,29 @@ else:
 # ============================================================================
 # ALL FILES IN THESE DIRECTORIES MUST BE LOADED, CHUNKED, AND PROCESSED
 
-BASE_DIR = '/mnt/c/Users/RoyT6/Downloads'
-COMP_DIR = f'{BASE_DIR}/Components'
+BASE_DIR = _BASE_PATH  # Use platform-aware path defined above
+COMP_DIR = f'{BASE_DIR}/Components Engine'
 
-# THE 13 MANDATORY DIRECTORIES - NO OTHERS ALLOWED
+# THE 14 MANDATORY DIRECTORIES - NO OTHERS ALLOWED
 CANONICAL_DIRECTORIES = {
-    "orchestrator": f"{BASE_DIR}/Orchestrator",
+    "orchestrator": f"{BASE_DIR}/Orchestrator Engine",
     "daily_top_10s": f"{BASE_DIR}/Daily Top 10s",
     "studios": f"{BASE_DIR}/Studios",
     "talent": f"{BASE_DIR}/Talent",
     "money_engine": f"{BASE_DIR}/Money Engine",
     "schig": f"{BASE_DIR}/SCHIG",
-    "mapie": f"{BASE_DIR}/MAPIE",
+    "mapie": f"{BASE_DIR}/MAPIE Engine",
     "abstract_data": f"{BASE_DIR}/Abstract Data",
-    "fresh_in": f"{BASE_DIR}/Fresh In!",
+    "fresh_in": f"{BASE_DIR}/FreshIn Engine",
     "views_training_data": f"{BASE_DIR}/Views TRaining Data",
-    "components": f"{BASE_DIR}/Components",
+    "components": f"{BASE_DIR}/Components Engine",
     "algo_engine": f"{BASE_DIR}/ALGO Engine",
-    "schema": f"{BASE_DIR}/Schema",
+    "schema": f"{BASE_DIR}/Schema Engine",
+    "merge_engine": f"{BASE_DIR}/Merge Engine",
 }
 
 # EXPLICITLY EXCLUDED - DO NOT LOAD
-EXCLUDED_DIRECTORIES = ["Freckles", "BIG MESS", "GPU Enablement", ".claude", "HTML", "latest", "Patents", "BFD Versions"]
+EXCLUDED_DIRECTORIES = ["Freckles", "BIG MESS", "GPU Engine", ".claude", "HTML", "latest", "Patents", "BFD Versions"]
 
 def load_all_canonical_files():
     """
@@ -314,7 +326,7 @@ def safe_json_load(fpath):
         try:
             with open(fpath, 'r', encoding=enc) as f:
                 return json.load(f)
-        except:
+        except (OSError, json.JSONDecodeError, UnicodeDecodeError):
             continue
     return None
 
@@ -455,7 +467,7 @@ def get_year_mult(year):
             return 1.0
         else:
             return 0.8
-    except:
+    except (TypeError, ValueError):
         return 0.8
 
 bfd_pd['_year_mult'] = bfd_pd['start_year'].apply(get_year_mult) if 'start_year' in bfd_pd.columns else 1.0
