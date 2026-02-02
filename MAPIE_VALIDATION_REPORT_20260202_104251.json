@@ -1,0 +1,137 @@
+{
+  "timestamp": "2026-02-02T10:42:46.313061",
+  "database": "C:\\Users\\RoyT6\\Downloads\\BFD-Views-2026-Feb-2.00.parquet",
+  "tests": {
+    "proof_of_work": {
+      "rows_loaded": 774886,
+      "cols_loaded": 221,
+      "views_columns": 200,
+      "quarterly_columns": 192,
+      "country_columns": 80,
+      "fc_uid_unique": 774886,
+      "imdb_coverage": 99.9981932826248,
+      "null_fc_uid": "0",
+      "file_size_mb": 106.76610946655273
+    },
+    "sine_wave": {
+      "status": "WARNING",
+      "max_single_freq_pct": 67.81813018284468,
+      "column_analyzed": "views_q1_2024_total"
+    },
+    "aberration": {
+      "status": "PASS",
+      "z3_outliers_pct": 1.556725034056187,
+      "cv_pct": 51.68599602964654,
+      "skewness": 1.7292941197733258,
+      "kurtosis": 5.38709113684158
+    },
+    "integrity": {
+      "checks_passed": 7,
+      "checks_total": 7,
+      "details": [
+        {
+          "name": "FC_UID format valid",
+          "passed": true,
+          "detail": "99.1% valid"
+        },
+        {
+          "name": "No duplicate fc_uid",
+          "passed": true,
+          "detail": "0 duplicates"
+        },
+        {
+          "name": "Views data coverage",
+          "passed": true,
+          "detail": "71.3% have views"
+        },
+        {
+          "name": "IMDB coverage",
+          "passed": true,
+          "detail": "100.0%"
+        },
+        {
+          "name": "Title populated",
+          "passed": true,
+          "detail": "100.0%"
+        },
+        {
+          "name": "Merge added rows",
+          "passed": true,
+          "detail": "+214,691 rows"
+        },
+        {
+          "name": "Merge added cols",
+          "passed": true,
+          "detail": "+176 columns"
+        }
+      ]
+    },
+    "merge_quality": {
+      "rows_added": 214691,
+      "cols_added": 176,
+      "new_views_columns": 176
+    }
+  },
+  "four_rules": {
+    "V1_proof_of_work": {
+      "hash": "0000dc38d0261e8c3d3d68a296446a6f5a34d1673f4ef27845e4403f15a07fea",
+      "nonce": 92362,
+      "verified": true
+    },
+    "V2_checksum": {
+      "md5": "478b1c4fdb53355d6f950bccbc70e1bc",
+      "sha256": "ac87afad674a4c895a74ee57994cdfbc2d62adc15dd8cf26760b615eea97d3f8",
+      "verified": true
+    },
+    "V3_execution_log": {
+      "run_id": "MAPIE-VALIDATION-20260202-104251",
+      "timestamp": "2026-02-02T10:42:51.629133",
+      "database_file": "C:\\Users\\RoyT6\\Downloads\\BFD-Views-2026-Feb-2.00.parquet",
+      "database_size_mb": 106.76610946655273,
+      "rows_processed": 774886,
+      "columns_processed": 221,
+      "load_time_seconds": 1.2068634033203125,
+      "total_runtime_seconds": 5.316053628921509,
+      "operations": [
+        "load_database",
+        "proof_of_work_generation",
+        "checksum_calculation",
+        "sine_wave_detection",
+        "aberration_testing",
+        "integrity_validation",
+        "merge_quality_assessment"
+      ]
+    },
+    "V4_trust_audit": {
+      "machine_generated": true,
+      "human_override": false,
+      "source_verification": {
+        "flixpatrol_source": "FC_UID_IMDB_Connections_CLEANED.csv",
+        "original_database": "BFD-Views-2026-Feb 1.00.parquet",
+        "merge_operation": "UPDATE 9,703 + APPEND 214,691"
+      },
+      "data_provenance": {
+        "flixpatrol_records": 224394,
+        "duplicates_resolved": 2,
+        "schema_compliant": true
+      },
+      "validation_chain": [
+        "Pre-merge QC assessment",
+        "FC_UID format validation",
+        "Duplicate resolution",
+        "Schema compliance check",
+        "Credibility Engine tests (11/11 passed)",
+        "Four Rules compliance",
+        "MAPIE validation"
+      ],
+      "auditor": "Claude Code (MAPIE Engine)",
+      "audit_timestamp": "2026-02-02T10:42:51.629164"
+    }
+  },
+  "summary": {
+    "overall_status": "REVIEW REQUIRED",
+    "average_score": 35.0,
+    "four_rules_compliant": false,
+    "timestamp": "2026-02-02T10:42:51.629271"
+  }
+}

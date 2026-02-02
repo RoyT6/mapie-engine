@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-02T10:55:19.034285",
+  "matched_titles": 4087,
+  "mape_percent": 226.21,
+  "median_ape_percent": 92.02,
+  "correlation": 0.1368,
+  "r_squared": 0.0187,
+  "flixpatrol_total_views": 19762594429,
+  "netflix_total_views": 29306200000,
+  "anti_cheat_check": {
+    "mape_in_valid_range": false,
+    "valid_range": "5% - 40%"
+  }
+}
