@@ -1,0 +1,45 @@
+{
+  "timestamp": "2026-02-02T11:25:14.497543",
+  "operation": "NETFLIX_SYMPHONY_MERGE",
+  "input_files": {
+    "bfd_database": "BFD-Views-2026-Feb-2.00.parquet",
+    "netflix_symphony": "netflix_symphony_combined.parquet"
+  },
+  "output_file": "C:\\Users\\RoyT6\\Downloads\\BFD-Views-2026-Feb-2.01.parquet",
+  "statistics": {
+    "total_rows": 774886,
+    "matched_rows": 6708,
+    "match_rate_percent": 0.87,
+    "updated_cells": 756053,
+    "columns_updated": 178
+  },
+  "mape_results": {
+    "post_merge_mape_percent": 0.0,
+    "post_merge_median_ape_percent": 0.0,
+    "correlation": 1.0,
+    "r_squared": 1.0,
+    "valid_range": "5% - 40%",
+    "status": "REVIEW - TOO LOW"
+  },
+  "four_rules": {
+    "V1_proof_of_work": {
+      "hash": "000045a4186528bd8860dc357bfe42ac55182f254db887d81140e08e6afba59b",
+      "nonce": 80200,
+      "verified": true
+    },
+    "V2_checksum": {
+      "original_md5": "27f32e7998a86a01d95b95dccdbe7188",
+      "updated_md5": "07c719b074a1476245b8925bcece40de",
+      "verified": true
+    },
+    "V3_execution_log": {
+      "run_id": "NETFLIX-SYMPHONY-MERGE-20260202-112514",
+      "verified": true
+    },
+    "V4_trust_audit": {
+      "machine_generated": true,
+      "human_override": false,
+      "verified": true
+    }
+  }
+}
