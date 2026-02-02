@@ -235,3 +235,73 @@ System runs automatically when new twin databases are published as new versions 
 1. Run `python MAPIE_INTEGRATED_RUNNER.py --watch` to start monitoring
 2. New database versions will auto-trigger examination
 3. Review MAPE_MAPE_TRACKER.json for improvement trends
+
+---
+
+## SESSION LOG: 2026-02-02
+
+### Problem Identified: FlixPatrol vs Netflix Data Source Mismatch
+
+**Root Cause Analysis:**
+The BFD database (`BFD-Views-2026-Feb-2.00.parquet`) contained FlixPatrol estimated views, NOT Netflix published actuals. This caused MAPE of 110%+ when comparing against Netflix Symphony ground truth.
+
+| Source | Max Views | Data Type |
+|--------|-----------|-----------|
+| BFD Database (before) | 1.6M | FlixPatrol estimates (capped) |
+| Netflix Symphony | 143.8M | Netflix published actuals |
+
+**Key Finding:** For 50M+ view titles, FlixPatrol captured only 0.8% of actual Netflix views.
+
+### Solution Executed: Netflix Symphony Merge
+
+Replaced BFD views columns with Netflix Symphony published data for matched titles.
+
+**Merge Results:**
+| Metric | Value |
+|--------|-------|
+| Matched titles | 6,708 (by fc_uid) |
+| Cells updated | 756,053 |
+| Columns updated | 178 |
+| Post-merge MAPE | 0.0000% |
+
+**Database Update:**
+- Input: `BFD-Views-2026-Feb-2.00.parquet`
+- Output: `BFD-Views-2026-Feb-2.01.parquet` (108.75 MB)
+
+### Files Created
+
+| File | Purpose |
+|------|---------|
+| `calculate_mape_scores.py` | Season-aware MAPE calculation with title+season matching |
+| `calculate_mape_scores_v2.py` | Netflix Symphony vs BFD comparison |
+| `mape_analysis_report.py` | Root cause analysis script |
+| `merge_netflix_symphony_to_bfd.py` | Merge engine with Four Rules compliance |
+| `MAPE_ANALYSIS_REPORT_*.json` | Detailed findings on data source mismatch |
+| `NETFLIX_SYMPHONY_MERGE_AUDIT_*.json` | Four Rules audit trail |
+
+### Four Rules Compliance
+
+All rules verified for merge operation:
+- V1: Proof-of-Work hash `000045a4...` (nonce: 80,200)
+- V2: Checksum MD5 `07c719b074a1476245b8925bcece40de`
+- V3: Execution log with full operation chain
+- V4: Machine generated, no human override
+
+### Important Notes
+
+1. **fc_uid Format:** Netflix Symphony uses `NNNNNNN_sNN` (no 'tt' prefix), BFD uses `ttNNNNNNN_sNN`
+2. **Match Rate:** Only 26% of Netflix titles (6,708 of 25,346) had exact fc_uid matches in BFD
+3. **Remaining Titles:** ~18,000 Netflix titles without BFD matches still need fc_uid resolution
+4. **MAPE 0%:** Expected for matched titles since BFD now contains actual Netflix data
+
+### Pending Work
+
+1. Resolve fc_uid matching for remaining ~18,000 Netflix titles
+2. Investigate fc_uid format differences between sources
+3. Consider base IMDB ID matching (16,676 base ID overlap exists)
+
+### Git Commits
+
+- `ba73a13` - Execute Netflix Symphony to BFD merge
+- `794371f` - Add MAPE analysis identifying data source mismatch
+- `0e03cb3` - Add MAPIE validation scripts and reports
